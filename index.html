@@ -1,0 +1,3129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>金钱观心理测试 · 10 个情境，看见你与金钱的关系</title>
+<meta name="description" content="10 题金钱情境测试，看看你的金钱观更接近规划者、联结者、追逐者还是守护者。原创自我探索内容，本地作答，不上传答案。">
+<meta name="theme-color" content="#F5EFE3">
+<style>
+/* 金钱观心理测试 · 定制主题：暖米白 / 深咖啡 / 柔和金 / 四类低饱和 */
+:root {
+  --paper: #F5EFE3;
+  --paper-soft: #FBF7EF;
+  --card: #FFFDF8;
+  --ink: #332A21;
+  --ink-2: #5D5146;
+  --ink-3: #8C8073;
+  --gold: #B99257;
+  --gold-2: #D8C29A;
+  --gold-3: #EFE2C9;
+  --line: #E6DAC8;
+  --line-soft: #F0E7D8;
+  --sage: #8FA98F;
+  --sage-soft: #E8EFE4;
+  --apricot: #D9A97E;
+  --apricot-soft: #F7E9DA;
+  --mist: #8EA5BE;
+  --mist-soft: #E5ECF4;
+  --plum: #A093B2;
+  --plum-soft: #EFE9F2;
+  --shadow: 0 18px 44px -28px rgba(60, 46, 30, .45);
+  --shadow-sm: 0 8px 20px -14px rgba(60, 46, 30, .4);
+  --serif: "Songti SC", "Noto Serif SC", "Source Han Serif SC", "Noto Serif CJK SC", "STSong", Georgia, serif;
+  --sans: "PingFang SC", "Noto Sans SC", "Noto Sans CJK SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --radius: 20px;
+  --ease: cubic-bezier(.22, .61, .36, 1);
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  background-image:
+    radial-gradient(1100px 700px at 82% -8%, rgba(216, 194, 154, .38), transparent 62%),
+    radial-gradient(900px 640px at -12% 22%, rgba(143, 169, 143, .16), transparent 60%),
+    radial-gradient(760px 520px at 108% 88%, rgba(217, 169, 126, .18), transparent 62%);
+  background-attachment: fixed;
+  line-height: 1.65;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 34px 22px max(34px, env(safe-area-inset-bottom));
+}
+
+@media (min-width: 820px) {
+  .app { padding: 56px 40px 64px; }
+}
+
+.eyebrow {
+  position: relative;
+  z-index: 2;
+  font-size: 11px;
+  letter-spacing: .30em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 0 0 10px;
+}
+
+.site-mark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 10.5px;
+  letter-spacing: .26em;
+  color: var(--ink-3);
+  text-transform: uppercase;
+}
+.site-mark::before {
+  content: "";
+  width: 22px;
+  height: 1px;
+  background: var(--gold);
+}
+
+/* ---------------- Home ---------------- */
+.view { animation: rise .55s var(--ease) both; }
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+
+.hero {
+  position: relative;
+  padding: 34px 0 8px;
+  overflow: hidden;
+}
+
+.hero-art {
+  position: absolute;
+  top: -64px;
+  right: -150px;
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+  opacity: .9;
+}
+.hero-art .ring {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(185, 146, 87, .26);
+  border-radius: 50%;
+}
+.hero-art .ring:nth-child(2) { inset: 46px; border-color: rgba(185, 146, 87, .26); }
+.hero-art .ring:nth-child(3) { inset: 96px; border-color: rgba(185, 146, 87, .18); }
+.hero-art .sun {
+  position: absolute;
+  inset: 128px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 34% 30%, #F5E7CC, #E4C79D 60%, #D8B98C);
+  box-shadow: 0 20px 40px -22px rgba(120, 86, 40, .55);
+}
+
+h1.title {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(44px, 12vw, 68px);
+  letter-spacing: .06em;
+  line-height: 1.12;
+  color: var(--ink);
+}
+h1.title span { display: block; }
+h1.title .thin {
+  font-size: .58em;
+  letter-spacing: .2em;
+  color: var(--gold);
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.lede {
+  margin: 22px 0 0;
+  max-width: 24em;
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--ink-2);
+}
+
+.meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 26px 0 0;
+  font-size: 12.5px;
+  letter-spacing: .08em;
+  color: var(--ink-3);
+}
+.meta-row i { width: 1px; height: 11px; background: var(--line); }
+
+.cta-row { margin-top: 28px; display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.btn {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease), background .25s, opacity .2s;
+}
+.btn-primary {
+  background: var(--ink);
+  color: #FBF6EC;
+  font-size: 15.5px;
+  letter-spacing: .12em;
+  padding: 17px 30px;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 16px 30px -20px rgba(51, 42, 33, .8);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 22px 34px -20px rgba(51, 42, 33, .85); }
+.btn-primary:active { transform: translateY(0); }
+.btn-primary .arrow { color: var(--gold-2); font-size: 17px; line-height: 1; }
+.btn-primary[disabled] { opacity: .45; cursor: not-allowed; transform: none; }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink-2);
+  font-size: 14px;
+  letter-spacing: .08em;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+.btn-ghost:hover { border-color: var(--line); color: var(--ink); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  font-size: 14.5px;
+  letter-spacing: .08em;
+  padding: 14px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(51, 42, 33, .22);
+}
+.btn-outline:hover { border-color: var(--ink); background: rgba(255, 253, 248, .7); }
+
+.section { margin-top: 44px; }
+
+.section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+}
+.section-head h2 {
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  margin: 0;
+}
+.section-head span { font-size: 11.5px; letter-spacing: .14em; color: var(--ink-3); }
+
+.type-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.type-mini {
+  background: var(--card);
+  border: 1px solid var(--line-soft);
+  border-radius: 16px;
+  padding: 15px 15px 14px;
+  box-shadow: var(--shadow-sm);
+}
+.type-mini .row { display: flex; align-items: center; gap: 9px; }
+.type-mini .k {
+  width: 24px; height: 24px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  flex: none;
+}
+.type-mini h3 {
+  font-family: var(--serif);
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: .06em;
+}
+.type-mini .tag { font-size: 11px; color: var(--ink-3); margin: 8px 0 0; letter-spacing: .06em; }
+.type-mini .kw { font-size: 10.5px; color: var(--ink-3); letter-spacing: .06em; margin-top: 4px; }
+
+.notice {
+  margin-top: 26px;
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--ink-3);
+  border-left: 2px solid var(--gold-3);
+  padding-left: 14px;
+}
+
+details.about {
+  margin-top: 30px;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+details.about summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 13px;
+  letter-spacing: .1em;
+  color: var(--ink-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+details.about summary::-webkit-details-marker { display: none; }
+details.about[open] summary { color: var(--ink); }
+details.about .about-body { font-size: 13px; line-height: 1.95; color: var(--ink-2); margin-top: 12px; }
+
+/* ---------------- Quiz ---------------- */
+.quiz-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 6px;
+}
+.quiz-count { font-size: 12px; letter-spacing: .16em; color: var(--ink-3); }
+.quiz-count b { color: var(--ink); font-weight: 600; font-size: 16px; letter-spacing: .04em; }
+.progress-track {
+  height: 3px;
+  background: var(--line);
+  border-radius: 99px;
+  margin: 14px 0 0;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--gold-2), var(--gold));
+  border-radius: 99px;
+  transition: width .45s var(--ease);
+}
+
+.q-card {
+  margin-top: 28px;
+  background: var(--card);
+  border: 1px solid var(--line-soft);
+  border-radius: 26px;
+  padding: 28px 22px 22px;
+  box-shadow: var(--shadow);
+}
+@media (min-width: 640px) { .q-card { padding: 36px 32px 28px; } }
+
+.q-num {
+  font-family: var(--serif);
+  font-size: 12px;
+  letter-spacing: .3em;
+  color: var(--gold);
+  margin: 0 0 14px;
+}
+.q-text {
+  font-family: var(--serif);
+  font-size: clamp(21px, 5.4vw, 27px);
+  line-height: 1.6;
+  font-weight: 600;
+  letter-spacing: .02em;
+  margin: 0 0 22px;
+  color: var(--ink);
+}
+
+.options { display: flex; flex-direction: column; gap: 10px; }
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  text-align: left;
+  background: #FDFAF3;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  padding: 15px 16px;
+  font-family: inherit;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: border-color .2s, background .2s, transform .2s var(--ease), color .2s;
+}
+.option:hover { border-color: var(--gold-2); background: #FFFDF6; transform: translateY(-1px); }
+.option .badge {
+  flex: none;
+  width: 27px; height: 27px;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: var(--serif);
+  font-size: 13px;
+  color: var(--gold);
+  border: 1px solid var(--gold-3);
+  background: #FFFDF8;
+  margin-top: 3px;
+  transition: all .2s;
+}
+.option .txt { flex: 1; }
+.option[aria-checked="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #FAF4E8;
+  box-shadow: 0 14px 26px -18px rgba(51, 42, 33, .7);
+}
+.option[aria-checked="true"] .badge { background: rgba(250, 244, 232, .14); border-color: rgba(216, 194, 154, .7); color: #F0DFC0; }
+.option:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+.q-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line-soft);
+  flex-wrap: nowrap;
+}
+.dots-row { display: flex; justify-content: center; margin-top: 12px; }
+.dots { display: flex; gap: 5px; align-items: center; }
+.dot { width: 6px; height: 6px; border-radius: 50%; background: var(--line); transition: background .3s, transform .3s; }
+.dot.on { background: var(--gold); }
+.dot.cur { transform: scale(1.5); background: var(--ink); }
+.hint { font-size: 11.5px; color: var(--ink-3); letter-spacing: .06em; margin-top: 12px; }
+
+/* ---------------- Result ---------------- */
+.result-hero {
+  position: relative;
+  border-radius: 26px;
+  padding: 30px 24px 26px;
+  background:
+    radial-gradient(120% 90% at 100% 0%, rgba(255, 255, 255, .5), transparent 60%),
+    linear-gradient(160deg, #FFFDF8, #F8F1E4);
+  border: 1px solid var(--line-soft);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.result-hero::after {
+  content: "";
+  position: absolute;
+  right: -70px; top: -70px;
+  width: 220px; height: 220px;
+  border-radius: 50%;
+  background: var(--accent-soft, var(--gold-3));
+  opacity: .55;
+  filter: blur(2px);
+}
+.result-hero .eyebrow { position: relative; z-index: 1; }
+.type-name {
+  position: relative;
+  z-index: 1;
+  font-family: var(--serif);
+  font-size: clamp(40px, 11vw, 56px);
+  line-height: 1.15;
+  letter-spacing: .1em;
+  font-weight: 600;
+  margin: 6px 0 6px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.type-name .sep { font-size: .5em; color: var(--gold); letter-spacing: 0; }
+
+.tie-list { position: relative; z-index: 1; display: flex; flex-direction: column; gap: 6px; margin: 10px 0 4px; }
+.tie-row { display: flex; align-items: baseline; gap: 10px; }
+.tie-row .k {
+  width: 22px; height: 22px; border-radius: 50%;
+  color: #fff; font-size: 10.5px; font-weight: 600;
+  display: grid; place-items: center; flex: none;
+  transform: translateY(-3px);
+}
+.tie-row .name {
+  font-family: var(--serif);
+  font-size: clamp(31px, 8.2vw, 40px);
+  letter-spacing: .12em;
+  line-height: 1.18;
+  font-weight: 600;
+  color: var(--ink);
+}
+.tie-row .t { font-size: 11.5px; color: var(--ink-3); letter-spacing: .08em; }
+
+.belief-label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: .14em;
+  color: var(--ink-3);
+  margin-bottom: 6px;
+}
+
+.type-tag {
+  position: relative; z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: .14em;
+  color: var(--ink-2);
+}
+.type-tag .bullet { width: 8px; height: 8px; border-radius: 50%; background: var(--accent, var(--gold)); }
+
+.belief {
+  position: relative;
+  z-index: 1;
+  margin: 20px 0 0;
+  padding-left: 16px;
+  border-left: 2px solid var(--gold-2);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--ink-2);
+  letter-spacing: .02em;
+}
+
+.chips { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+.chip {
+  font-size: 11.5px;
+  letter-spacing: .1em;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--accent-soft, var(--gold-3));
+  color: var(--ink-2);
+  border: 1px solid rgba(51, 42, 33, .06);
+}
+
+.snapshot {
+  position: relative;
+  z-index: 1;
+  margin: 20px 0 0;
+  font-size: 12px;
+  letter-spacing: .06em;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.hero-actions { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+
+.dist-card {
+  margin-top: 18px;
+  background: var(--card);
+  border: 1px solid var(--line-soft);
+  border-radius: 20px;
+  padding: 22px 20px 18px;
+  box-shadow: var(--shadow-sm);
+}
+.dist-card h3 {
+  font-family: var(--serif);
+  font-size: 16px;
+  letter-spacing: .12em;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+.dist-sub { font-size: 11.5px; color: var(--ink-3); margin: 0 0 16px; letter-spacing: .04em; }
+.dist-row { display: grid; grid-template-columns: 84px 1fr 84px; gap: 10px; align-items: center; margin-bottom: 11px; }
+.dist-label { font-size: 12.5px; color: var(--ink-2); letter-spacing: .04em; white-space: nowrap; }
+.dist-track { display: block; height: 7px; border-radius: 99px; background: #F1EADD; overflow: hidden; }
+.dist-fill { display: block; height: 100%; border-radius: 99px; width: 0; transition: width .8s var(--ease); }
+.dist-val { font-size: 11px; color: var(--ink-2); text-align: right; font-variant-numeric: tabular-nums; letter-spacing: .01em; white-space: nowrap; }
+
+.report { margin-top: 26px; display: flex; flex-direction: column; gap: 18px; }
+
+.type-block {
+  border-radius: 22px;
+  background: var(--card);
+  border: 1px solid var(--line-soft);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.type-block-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  background: var(--accent-soft);
+  border-bottom: 1px solid rgba(51, 42, 33, .05);
+}
+.type-block-head .k {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  display: grid; place-items: center;
+  font-size: 10.5px; font-weight: 600;
+}
+.type-block-head h3 {
+  font-family: var(--serif);
+  margin: 0; font-size: 19px; letter-spacing: .1em; font-weight: 600;
+}
+.type-block-head .tag { font-size: 11px; color: var(--ink-3); letter-spacing: .1em; margin-left: 2px; }
+.type-block-body { padding: 6px 20px 22px; }
+
+.module { padding: 18px 0 4px; border-top: 1px solid var(--line-soft); }
+.module:first-child { border-top: 0; padding-top: 16px; }
+.module-title {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  margin: 0 0 10px;
+}
+.module-title .no {
+  font-family: var(--serif);
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: .1em;
+}
+.module-title h4 {
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  margin: 0;
+  color: var(--ink);
+}
+.module p { margin: 0 0 9px; font-size: 14.5px; line-height: 1.85; color: var(--ink-2); }
+.module p.muted { font-size: 13px; color: var(--ink-3); }
+
+.m-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.m-list li { display: flex; gap: 10px; font-size: 14.5px; line-height: 1.75; color: var(--ink-2); }
+.m-list li .lab {
+  flex: none;
+  font-size: 11.5px;
+  letter-spacing: .04em;
+  color: var(--ink);
+  background: var(--accent-soft);
+  border-radius: 6px;
+  padding: 3px 8px;
+  height: fit-content;
+  margin-top: 3px;
+  white-space: nowrap;
+}
+
+.spend-table { width: 100%; border-collapse: collapse; }
+.spend-table tr { border-bottom: 1px dashed var(--line); }
+.spend-table tr:last-child { border-bottom: 0; }
+.spend-table th {
+  width: 84px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--ink);
+  padding: 9px 10px 9px 0;
+  vertical-align: top;
+  white-space: nowrap;
+}
+.spend-table td { font-size: 14px; color: var(--ink-2); padding: 9px 0; line-height: 1.7; }
+
+.num-list { margin: 0; padding: 0; list-style: none; counter-reset: n; }
+.num-list li {
+  counter-increment: n;
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 10px;
+  font-size: 14.5px;
+  line-height: 1.8;
+  color: var(--ink-2);
+  margin-bottom: 10px;
+}
+.num-list li::before {
+  content: counter(n);
+  font-family: var(--serif);
+  font-size: 12px;
+  color: var(--gold);
+  border: 1px solid var(--gold-3);
+  border-radius: 50%;
+  width: 22px; height: 22px;
+  display: grid; place-items: center;
+  margin-top: 4px;
+}
+.num-list li b { color: var(--ink); font-weight: 600; display: block; margin-bottom: 1px; }
+
+.emotion-row {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--line);
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.75;
+}
+.emotion-row:last-child { border-bottom: 0; }
+.emotion-row .lab {
+  font-size: 11.5px;
+  color: var(--ink);
+  letter-spacing: .06em;
+  padding-top: 2px;
+}
+
+.reflect { display: flex; flex-direction: column; gap: 10px; }
+.reflect-item {
+  background: var(--accent-soft);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 13.8px;
+  line-height: 1.75;
+  color: var(--ink-2);
+  display: flex;
+  gap: 10px;
+}
+.reflect-item .n { font-family: var(--serif); color: var(--gold); font-size: 12px; flex: none; }
+
+.quote-block {
+  background: var(--ink);
+  color: #F7EFDE;
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin-top: 6px;
+}
+.quote-block .q {
+  font-family: var(--serif);
+  font-size: 17.5px;
+  line-height: 1.95;
+  letter-spacing: .04em;
+  margin: 0;
+  color: #FBF3E1;
+}
+.quote-block .q::before { content: "「"; color: var(--gold-2); }
+.quote-block .q::after { content: "」"; color: var(--gold-2); }
+.quote-block .task {
+  margin: 12px 0 0;
+  font-size: 11.5px;
+  letter-spacing: .12em;
+  color: rgba(247, 239, 222, .72);
+}
+
+.combo-card {
+  border-radius: 20px;
+  border: 1px solid var(--gold-3);
+  background: linear-gradient(165deg, #FFFAF0, #F7EEDD);
+  padding: 22px 20px;
+  box-shadow: var(--shadow-sm);
+}
+.combo-card .eyebrow { color: var(--gold); }
+.combo-card h3 {
+  font-family: var(--serif);
+  font-size: 20px;
+  letter-spacing: .06em;
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+.combo-card p { margin: 0 0 12px; font-size: 14.5px; line-height: 1.9; color: var(--ink-2); }
+.combo-card p:last-of-type { margin-bottom: 0; }
+
+.result-foot {
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.foot-note {
+  margin-top: 18px;
+  font-size: 11.5px;
+  line-height: 1.9;
+  color: var(--ink-3);
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(26px + env(safe-area-inset-bottom));
+  transform: translate(-50%, 16px);
+  background: rgba(51, 42, 33, .94);
+  color: #F9F3E6;
+  font-size: 13px;
+  letter-spacing: .06em;
+  padding: 11px 18px;
+  border-radius: 999px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s, transform .3s var(--ease);
+  z-index: 40;
+  max-width: calc(100vw - 40px);
+  text-align: center;
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+.loading-mask {
+  position: fixed; inset: 0;
+  background: rgba(245, 239, 227, .86);
+  backdrop-filter: blur(3px);
+  display: grid; place-items: center;
+  z-index: 50;
+  opacity: 0; pointer-events: none;
+  transition: opacity .25s;
+}
+.loading-mask.show { opacity: 1; pointer-events: auto; }
+.loading-box { text-align: center; }
+.spinner {
+  width: 34px; height: 34px;
+  margin: 0 auto 14px;
+  border: 1px solid var(--gold-2);
+  border-top-color: var(--ink);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-box p { font-size: 12.5px; letter-spacing: .12em; color: var(--ink-2); margin: 0; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+@media (max-width: 360px) {
+  .app { padding-left: 16px; padding-right: 16px; }
+  .option { padding: 13px 13px; font-size: 14.5px; }
+  .dist-row { grid-template-columns: 72px 1fr 78px; }
+  .dist-label { font-size: 11.5px; }
+  .dist-val { font-size: 10px; }
+  .emotion-row { grid-template-columns: 66px 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .001s !important; transition-duration: .001s !important; }
+}
+
+@media print {
+  body { background: #fff; }
+  .hero-actions, .result-foot, .site-mark { display: none; }
+  .type-block, .dist-card, .result-hero { break-inside: avoid; box-shadow: none; }
+}
+
+[hidden] { display: none !important; }
+
+.resume-box {
+  margin-top: 22px;
+  padding: 14px 16px;
+  border: 1px dashed var(--gold-2);
+  border-radius: 14px;
+  background: rgba(255, 253, 248, .7);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.resume-box p { margin: 0; font-size: 12.5px; color: var(--ink-2); letter-spacing: .04em; }
+
+.combo-names {
+  margin: 14px 0 0;
+  font-size: 11.5px;
+  letter-spacing: .1em;
+  color: var(--ink-3);
+}
+
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="site-mark">Money &amp; Self · 原创自我探索</header>
+
+  <main id="view-home" class="view">
+    <section class="hero">
+      <div class="hero-art" aria-hidden="true">
+        <div class="ring"></div><div class="ring"></div><div class="ring"></div><div class="sun"></div>
+      </div>
+      <p class="eyebrow">10 Questions · About 2 Minutes</p>
+      <h1 class="title"><span>金钱观</span><span class="thin">心理测试</span></h1>
+      <p class="lede">你与金钱的关系，藏着你如何理解安全感、爱、野心与警惕。</p>
+      <div class="meta-row"><span>10 道情境题</span><i></i><span>约 2 分钟</span><i></i><span>本地作答 · 不上传</span></div>
+      <div class="cta-row">
+        <button id="start-btn" class="btn btn-primary">开始测试<span class="arrow">→</span></button>
+      </div>
+      <div class="resume-box" id="resume-box" hidden>
+        <p id="resume-text"></p>
+        <button class="btn btn-outline" id="resume-btn">继续作答</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><h2>四种金钱观倾向</h2><span>No Ranking</span></div>
+      <div class="type-grid" id="type-grid"></div>
+      <p class="notice">四种类型并不代表谁更好。一个人也可能同时具有两种甚至多种金钱观，只是不同情境下表现出来的倾向有所不同。</p>
+    </section>
+
+    <details class="about">
+      <summary>关于这个测试<span>＋</span></summary>
+      <div class="about-body">
+        <p>这是一套原创的自我探索测试：10 个关于奖金、借钱、工资、家庭谈钱、未来想象的情境，用来观察你在金钱面前最自然的反应模式。</p>
+        <p>结果分为四种倾向——规划者、联结者、追逐者、守护者。它们描述的是本次作答中呈现的偏好，不是稳定的人格标签，也没有经过量表级的心理测量验证，不构成心理诊断或投资建议。</p>
+        <p>所有作答、计分与报告生成都在你的设备上完成，不会上传，也不会用于任何画像或推荐。你可以随时清除本地记录。</p>
+      </div>
+    </details>
+  </main>
+
+  <main id="view-quiz" class="view" hidden>
+    <div class="quiz-top">
+      <span class="quiz-count" id="q-count">第 1 / 10 题</span>
+      <button class="btn btn-ghost" id="restart-top">重新开始</button>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+    <div class="dots-row"><div class="dots" id="dots" aria-hidden="true"></div></div>
+
+    <section class="q-card">
+      <p class="q-num" id="q-num">QUESTION 01</p>
+      <h2 class="q-text" id="q-text"></h2>
+      <div class="options" id="options" role="radiogroup" aria-labelledby="q-text"></div>
+      <div class="q-foot">
+        <button class="btn btn-ghost" id="prev-btn">← 上一题</button>
+        <button class="btn btn-primary" id="next-btn">下一题</button>
+      </div>
+      <p class="hint" id="q-hint">选择一个更接近你的选项。</p>
+    </section>
+    <span class="sr-only" id="quiz-aria" aria-live="polite"></span>
+  </main>
+
+  <main id="view-result" class="view" hidden>
+    <section class="result-hero" id="result-hero">
+      <p class="eyebrow">Your Money Story</p>
+      <div class="type-name" id="result-name"></div>
+      <div class="type-tag" id="result-tag"></div>
+      <blockquote class="belief" id="result-belief"></blockquote>
+      <div class="chips" id="result-chips"></div>
+      <p class="snapshot" id="result-snapshot"></p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" id="download-pdf">下载完整报告 PDF</button>
+        <button class="btn btn-outline" id="download-poster">保存分享海报</button>
+      </div>
+    </section>
+
+    <section class="dist-card">
+      <h3>你的金钱观倾向分布</h3>
+      <p class="dist-sub">这是本次答题的个人选项分布，不代表与其他测试者相比的比例。</p>
+      <div id="dist-rows"></div>
+    </section>
+
+    <section class="combo-card" id="combo" hidden>
+      <p class="eyebrow" id="combo-label">组合解读</p>
+      <h3 id="combo-title"></h3>
+      <p id="combo-text"></p>
+      <p class="combo-names" id="combo-names"></p>
+    </section>
+
+    <div class="report" id="report-body"></div>
+
+    <div class="result-foot">
+      <button class="btn btn-outline" id="edit-answers">返回修改答案</button>
+      <button class="btn btn-ghost" id="restart">重新测试</button>
+    </div>
+    <p class="foot-note">本测试为原创的自我探索内容，结果描述的是本次选择呈现的倾向，不是稳定的人格标签，也不构成心理诊断、投资建议或财务规划意见。四种类型没有优劣之分。如需专业支持，请咨询持证心理咨询师或财务顾问。<br>所有作答与报告生成均在你的设备本地完成，不会上传。</p>
+  </main>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="loading-mask" id="mask">
+  <div class="loading-box"><div class="spinner"></div><p id="mask-text">正在生成…</p></div>
+</div>
+
+<script>window.__DATA__ = {
+ "version": "money-view-v1",
+ "items": [
+  {
+   "id": "q01",
+   "index": 1,
+   "prompt": "领到一笔意料之外的奖金，你脑海里闪过的第一个念头是？",
+   "options": [
+    {
+     "key": "A",
+     "type": "a",
+     "text": "赶紧存起来，或者放进投资账户里"
+    },
+    {
+     "key": "B",
+     "type": "b",
+     "text": "请重要的人吃顿饭，或者给家人买份礼物"
+    },
+    {
+     "key": "C",
+     "type": "c",
+     "text": "终于可以买那个在购物车里放了好久的东西了"
+    },
+    {
+     "key": "D",
+     "type": "d",
+     "text": "有一种隐约的不安，觉得「这钱会不会留不住」"
+    }
+   ]
+  },
+  {
+   "id": "q02",
+   "index": 2,
+   "prompt": "如果有人对你说「你不应该赚那么多钱」，你的第一反应是？",
+   "options": [
+    {
+     "key": "A",
+     "type": "a",
+     "text": "莫名其妙，我的钱是靠能力赚来的"
+    },
+    {
+     "key": "B",
+     "type": "b",
+     "text": "有点难过，ta 是不是在否定我的价值"
+    },
+    {
+     "key": "C",
+     "type": "c",
+     "text": "懒得解释，但我心里会反复想这句话"
+    },
+    {
+     "key": "D",
+     "type": "d",
+     "text": "内心深处隐隐觉得，ta 说的好像有一点点道理"
+    }
+   ]
+  },
+  {
+   "id": "q03",
+   "index": 3,
+   "prompt": "想到「有钱人」这三个字，你脑海里最先浮现的感觉更接近 ——",
+   "options": [
+    {
+     "key": "A",
+     "type": "a",
+     "text": "自律的、有规划的、值得学习的"
+    },
+    {
+     "key": "B",
+     "type": "b",
+     "text": "自由的、能帮助别人的"
+    },
+    {
+     "key": "C",
+     "type": "c",
+     "text": "复杂的，既有向往又有距离感"
+    },
+    {
+     "key": "D",
+     "type": "d",
+     "text": "有某种说不清的排斥或不信任"
+    }
+   ]
+  },
+  {
+   "id": "q04",
+   "index": 4,
+   "prompt": "小时候，家里人谈到钱时，气氛最接近哪种？",
+   "options": [
+    {
+     "key": "A",
+     "type": "a",
+     "text": "理性讨论，像在讲一个需要规划的事务"
+    },
+    {
+     "key": "B",
+     "type": "b",
+     "text": "钱是表达爱和关怀的一种方式"
+    },
+    {
+     "key": "C",
+     "type": "c",
+     "text": "不太谈钱，觉得谈钱有点俗"
+    },
+    {
+     "key": "D",
+     "type": "d",
+     "text": "常伴随紧张、争吵，或者长期的沉默"
+    }
+   ]
+  },
+  {
+   "id": "q05",
+   "index": 5,
+   "prompt": "当朋友跟你借一笔不算小的钱时，你通常 ——",
+   "options": [
+    {
+     "key": "A",
+     "type": "a",
+     "text": "在心里评估对方的还款能力和这笔钱的风险"
+    },
+    {
+     "key": "B",
+     "type": "b",
+     "text": "如果关系足够近，救急是第一反应"
+    },
+    {
+     "key": "C",
+     "type": "c",
+     "text": "答应借，但借出后心里一直有个疙瘩"
+    },
+    {
+     "key": "D",
+     "type": "d",
+     "text": "很难开口拒绝，哪怕自己并不宽裕"
+    }
+   ]
+  },
+  {
+   "id": "q06",
+   "index": 6,
+   "prompt": "收到工资到账短信的那一刻，你心里的微感受更接近 ——",
+   "options": [
+    {
+     "key": "A",
+     "type": "a",
+     "text": "平静，这是计划内的事"
+    },
+    {
+     "key": "B",
+     "type": "b",
+     "text": "有一点点成就感"
+    },
+    {
+     "key": "C",
+     "type": "c",
+     "text": "短暂开心，很快就开始惦记账单和支出"
+    },
+    {
+     "key": "D",
+     "type": "d",
+     "text": "隐约感到一种「还不够」的焦虑"
+    }
+   ]
+  },
+  {
+   "id": "q07",
+   "index": 7,
+   "prompt": "以下哪种情况最让你不舒服？",
+   "options": [
+    {
+     "key": "A",
+     "type": "a",
+     "text": "看到账户余额低于自己设定的安全线"
+    },
+    {
+     "key": "B",
+     "type": "b",
+     "text": "因为钱的问题和亲近的人产生隔阂"
+    },
+    {
+     "key": "C",
+     "type": "c",
+     "text": "想买的东西被别人买走了最后一个"
+    },
+    {
+     "key": "D",
+     "type": "d",
+     "text": "有人突然问起你的收入或存款"
+    }
+   ]
+  },
+  {
+   "id": "q08",
+   "index": 8,
+   "prompt": "你认为金钱在人生中扮演的角色更接近 ——",
+   "options": [
+    {
+     "key": "A",
+     "type": "a",
+     "text": "工具，帮你把生活经营得更稳妥"
+    },
+    {
+     "key": "B",
+     "type": "b",
+     "text": "资源，让你能照顾在乎的人、体验更广阔的世界"
+    },
+    {
+     "key": "C",
+     "type": "c",
+     "text": "奖赏，证明你的努力和能力"
+    },
+    {
+     "key": "D",
+     "type": "d",
+     "text": "一道考题，总让你有些紧张，不知道自己做对了没有"
+    }
+   ]
+  },
+  {
+   "id": "q09",
+   "index": 9,
+   "prompt": "想象五年后你拥有了一笔可观的财富，你最先想到的画面是 ——",
+   "options": [
+    {
+     "key": "A",
+     "type": "a",
+     "text": "我站在阳台上看着晨光，心里很踏实"
+    },
+    {
+     "key": "B",
+     "type": "b",
+     "text": "带着父母或伴侣去旅行，看他们开心的样子"
+    },
+    {
+     "key": "C",
+     "type": "c",
+     "text": "终于不用再为了钱做自己不喜欢的事了"
+    },
+    {
+     "key": "D",
+     "type": "d",
+     "text": "我有点不敢想象那个画面，因为总觉得不太可能"
+    }
+   ]
+  },
+  {
+   "id": "q10",
+   "index": 10,
+   "prompt": "如果「金钱」是一个人，ta 站在你面前，你觉得 ta 的表情会是 ——",
+   "options": [
+    {
+     "key": "A",
+     "type": "a",
+     "text": "可靠的同事，跟你握了握手"
+    },
+    {
+     "key": "B",
+     "type": "b",
+     "text": "一个有时来有时走的老朋友"
+    },
+    {
+     "key": "C",
+     "type": "c",
+     "text": "忽冷忽热的恋人，让你捉摸不定"
+    },
+    {
+     "key": "D",
+     "type": "d",
+     "text": "严肃的考官，总在审视你够不够格"
+    }
+   ]
+  }
+ ],
+ "types": [
+  {
+   "id": "a",
+   "key": "A",
+   "name": "规划者",
+   "tag": "安全与掌控型",
+   "headline": "金钱是「安全感的基石」",
+   "color": "#8FA98F",
+   "belief": "只有当一切都在掌控之中，我才能真正安心。",
+   "keywords": [
+    "秩序",
+    "掌控",
+    "长期主义",
+    "缓冲垫"
+   ],
+   "summary": "对你来说，金钱不是炫耀的资本，而是秩序感和掌控感的延伸。你偏好可预测、可持续的财务状态，不喜欢失控或冲动消费。你对金钱的理解更接近一种长期保障机制：钱不只是交换媒介，更像是生活的缓冲垫、面对意外的底气，以及做出人生选择时的安全保障。",
+   "mechanismIntro": "你的金钱观并不只是「会算账」，背后是一套稳定运转的心理机制。",
+   "mechanism": [
+    {
+     "label": "安全需求较高",
+     "text": "你希望拥有足够的储备，以应对失业、疾病、突发事件和生活变化。"
+    },
+    {
+     "label": "掌控需求较高",
+     "text": "你倾向于通过预算、记账、储蓄和规划来降低不确定性。"
+    },
+    {
+     "label": "延迟满足倾向",
+     "text": "你愿意放弃部分即时享受，换取长期的稳定和收益。"
+    },
+    {
+     "label": "风险敏感",
+     "text": "面对不熟悉的投资、借贷或大额消费时，你通常需要充分了解之后才会行动。"
+    }
+   ],
+   "origin": "这种倾向可能来自理性规划的习惯，也可能与过去经历过的经济不稳定、家庭教育或个人安全需求有关，并不意味着一定有过经济创伤。",
+   "spending": [
+    {
+     "scene": "日常购物",
+     "behavior": "先比较价格、质量和实用性"
+    },
+    {
+     "scene": "大额消费",
+     "behavior": "反复权衡，倾向于充分准备后购买"
+    },
+    {
+     "scene": "储蓄",
+     "behavior": "喜欢设置目标和安全储备"
+    },
+    {
+     "scene": "投资",
+     "behavior": "更关注风险、稳定性和长期回报"
+    },
+    {
+     "scene": "奖励自己",
+     "behavior": "容易觉得「还可以再等等」"
+    },
+    {
+     "scene": "突发支出",
+     "behavior": "如果打破预算，可能产生不适"
+    }
+   ],
+   "strengths": [
+    "具备较强的长期规划意识。",
+    "不容易被短期消费诱惑左右。",
+    "对财务风险有一定警觉性。",
+    "更容易建立持续性的储蓄习惯。",
+    "在长期目标管理方面具有优势。"
+   ],
+   "blindspots": [
+    {
+     "title": "过度储蓄，忽略当下体验",
+     "text": "你可能总觉得未来还有更多需要准备的事情，于是不断推迟旅行、兴趣爱好和生活享受。"
+    },
+    {
+     "title": "对消费产生不必要的负罪感",
+     "text": "即使一笔消费完全在预算范围内，也可能反复思考是否值得。"
+    },
+    {
+     "title": "把财务控制等同于生活安全",
+     "text": "当账户余额出现波动时，你可能比实际经济损失更早产生心理压力。"
+    },
+    {
+     "title": "过于追求确定性",
+     "text": "有时你会因为害怕风险而错失合理的成长机会，例如提升技能、尝试新项目或进行适度投资。"
+    }
+   ],
+   "emotion": {
+    "intro": "在金钱这件事上，你的情绪起伏通常不大，但「安心」是有条件的：账面清楚、计划在轨。",
+    "rows": [
+     {
+      "label": "安心来源",
+      "text": "账户留有余量、支出在预算内、未来几个月大致可预测。"
+     },
+     {
+      "label": "压力触发点",
+      "text": "突发支出打乱计划、被迫在没有准备好的情况下做大决定。"
+     },
+     {
+      "label": "满足感",
+      "text": "更多来自目标达成而非即时消费；完成一个储蓄目标，比买一件东西更让你踏实。"
+     },
+     {
+      "label": "安全感",
+      "text": "不是数字越大越好，而是「我知道最坏的情况下我撑得住」。"
+     }
+    ]
+   },
+   "relation": [
+    "你可能更倾向于经济独立，不喜欢欠人情，也不希望因为钱而受到他人控制。",
+    "在亲密关系中，你可能非常重视共同储蓄、消费计划和财务责任。但如果对方消费习惯与你差异较大，容易产生摩擦。",
+    "你需要留意：财务上的合理，并不总是意味着情感上的充分沟通。"
+   ],
+   "growthIntro": "你需要学习的不是更加节省，而是建立一种既有安全感、又允许自己享受生活的金钱关系。",
+   "growth": [
+    "建立安全储备目标，达到目标后允许自己放松。",
+    "单独设置快乐消费账户，不需要为合理消费反复自责。",
+    "每月安排一笔体验预算，用于旅行、兴趣和生活享受。",
+    "面对合理风险时，学习区分「可承受的风险」与「无法控制的风险」。",
+    "练习接受计划之外的小变化，不要求所有事情都绝对可控。"
+   ],
+   "reflect": [
+    "如果把「安全线」降到你实际需要的水平，你最想先用多出来的钱换什么体验？",
+    "最近一次让你觉得「这钱花得值」的消费是什么？它满足了你的什么需要？",
+    "你反复担心的那个「万一」，发生的概率和真正的影响分别有多大？"
+   ],
+   "motto": "金钱不仅是为了让未来的你不害怕，也应该让现在的你有能力好好生活。",
+   "task": "从控制金钱，走向驾驭金钱。"
+  },
+  {
+   "id": "b",
+   "key": "B",
+   "name": "联结者",
+   "tag": "情感与关系型",
+   "headline": "金钱 = 爱与关系的连接",
+   "color": "#DFAF86",
+   "belief": "钱最有价值的地方，是能够让重要的人过得更好。",
+   "keywords": [
+    "温度",
+    "分享",
+    "共情",
+    "人情"
+   ],
+   "summary": "对你而言，金钱的意义往往超越了物质本身。它可以是一顿用心准备的晚餐、一份送给家人的礼物、一场与朋友的旅行，也可以是在别人遇到困难时伸出的援手。你可能很少单纯用价格衡量一件东西的价值：只要它能带来情感满足、表达关心或维系关系，你就会觉得这笔钱花得值得。",
+   "mechanismIntro": "你的金钱观里，「关系」常常比「数字」更靠前。",
+   "mechanism": [
+    {
+     "label": "关系需求较高",
+     "text": "你重视人与人之间的连接，希望自己能够被需要、被理解。"
+    },
+    {
+     "label": "情感表达倾向",
+     "text": "你可能习惯通过请客、送礼、承担费用表达关心。"
+    },
+    {
+     "label": "分享意识较强",
+     "text": "你更容易把财富视为可以共享的资源。"
+    },
+    {
+     "label": "人情敏感",
+     "text": "面对亲友的经济请求，你可能比面对自己的消费更难拒绝。"
+    }
+   ],
+   "origin": "这种金钱观可能来自家庭中的情感表达方式，也可能源于你个人对关系和陪伴的重视。",
+   "spending": [
+    {
+     "scene": "日常购物",
+     "behavior": "喜欢为家人和朋友挑选礼物"
+    },
+    {
+     "scene": "大额消费",
+     "behavior": "愿意为共同体验买单"
+    },
+    {
+     "scene": "储蓄",
+     "behavior": "可能会考虑家庭和亲友的需求"
+    },
+    {
+     "scene": "投资",
+     "behavior": "有时会受到熟人推荐和关系影响"
+    },
+    {
+     "scene": "奖励自己",
+     "behavior": "为别人花钱比为自己花钱更爽快"
+    },
+    {
+     "scene": "借钱给人",
+     "behavior": "容易因为关系亲近而降低风险判断"
+    }
+   ],
+   "strengths": [
+    "慷慨、乐于分享，具有较强的共情能力。",
+    "愿意为重要的人投入资源。",
+    "能够通过金钱创造温暖的共同体验。",
+    "不容易将财富视为衡量人际价值的唯一标准。",
+    "在家庭和团队中往往具有较强的责任意识。"
+   ],
+   "blindspots": [
+    {
+     "title": "用金钱表达爱，却忽略了自身需求",
+     "text": "你可能愿意为别人购买昂贵礼物，却舍不得为自己买一件真正喜欢的东西。"
+    },
+    {
+     "title": "不善于拒绝，容易承担超出能力的经济责任",
+     "text": "面对家人、朋友的借钱请求，你可能因为担心关系受损而勉强答应。"
+    },
+    {
+     "title": "容易把金钱付出与关系质量联系起来",
+     "text": "当自己的付出没有得到相应回应时，可能感到委屈、失望，甚至怀疑自己是否不被重视。"
+    },
+    {
+     "title": "容易受到熟人关系影响而忽视风险",
+     "text": "例如合伙投资、朋友推荐项目、亲友借贷等，可能因为信任而缺少必要的财务判断。"
+    }
+   ],
+   "emotion": {
+    "intro": "你的金钱情绪常常与「别人」绑定：付出的那一刻是暖的，被辜负的那一刻是凉的。",
+    "rows": [
+     {
+      "label": "安心来源",
+      "text": "关系融洽、被需要、有来有往；觉得自己在在乎的人那里是重要的。"
+     },
+     {
+      "label": "压力触发点",
+      "text": "难以开口拒绝的请求、付出后没有回应、因钱产生的疏远。"
+     },
+     {
+      "label": "满足感",
+      "text": "看到对方因为你的付出而开心，比自己收到礼物更强烈。"
+     },
+     {
+      "label": "安全感",
+      "text": "被爱、被记得、关系稳定，而不只是账户上的数字。"
+     }
+    ]
+   },
+   "relation": [
+    "你可能是关系中比较愿意主动付出的一方，也常常是那个把账默默结掉的人。",
+    "但需要注意，真正健康的关系不应该长期依赖某一个人承担经济成本。你可以关心别人，但不需要通过不断付出来证明自己的重要性。",
+    "尤其在亲密关系中，建议提前沟通消费观、共同支出、个人储蓄和家庭责任，避免因为金钱分配不均而积累情绪。"
+   ],
+   "growthIntro": "你需要学习的是：在保持温暖和慷慨的同时，建立清晰的金钱边界。",
+   "growth": [
+    "每月先为自己安排固定储蓄，再考虑其他人的需求。",
+    "将礼物、人情、家庭支持设置独立预算。",
+    "面对借钱请求，先评估自己的经济能力，不要立即答应。",
+    "对于合伙投资和大额借贷，即使关系再好，也要保留书面约定。",
+    "练习直接表达关心，不必每次都通过金钱完成情感表达。"
+   ],
+   "reflect": [
+    "最近一次为别人花钱时，你是真心愿意，还是因为不好意思拒绝？",
+    "如果不必用礼物证明在意，你最想用什么方式让重要的人感到被爱？",
+    "你给别人的，和给自己的，比例大概是多少？这个比例让你舒服吗？"
+   ],
+   "motto": "你不需要用金钱证明自己值得被爱。真正珍贵的关系，不应该让你的善良变成经济负担。",
+   "task": "从习惯付出，走向有边界的给予。"
+  },
+  {
+   "id": "c",
+   "key": "C",
+   "name": "追逐者",
+   "tag": "成就与自由型",
+   "headline": "金钱 = 自我价值与选择权",
+   "color": "#93A7BE",
+   "belief": "拥有更多金钱，意味着我能够成为更好的自己，拥有更多人生选择。",
+   "keywords": [
+    "成就",
+    "自由",
+    "选择权",
+    "向上"
+   ],
+   "summary": "你希望通过赚钱提升生活质量、证明能力、拓展人生边界。你在意的不只是财富数字，还有金钱带来的自由：可以决定在哪里生活、做什么工作、过什么样的人生。你在意金钱，不一定是因为物质本身，而是因为金钱代表着能力、选择权、独立性和未来的可能性。",
+   "mechanismIntro": "你的金钱动力，来自一种「不想被困住」的渴望。",
+   "mechanism": [
+    {
+     "label": "成就需求较高",
+     "text": "你希望看到自己的努力产生实际回报。"
+    },
+    {
+     "label": "成长需求较高",
+     "text": "你不满足于现状，渴望不断突破。"
+    },
+    {
+     "label": "自主需求较高",
+     "text": "你希望自己有能力决定在哪里生活、做什么工作、过什么样的人生。"
+    },
+    {
+     "label": "外部评价敏感度可能较高",
+     "text": "收入、消费水平和社会地位有时会影响你对自己的评价。"
+    }
+   ],
+   "origin": "这种倾向可能来自个人抱负、成长经历，也可能与曾经缺乏选择权或认可感有关。",
+   "spending": [
+    {
+     "scene": "日常购物",
+     "behavior": "愿意为品质、审美和体验付费"
+    },
+    {
+     "scene": "大额消费",
+     "behavior": "可能把消费视为对努力的奖励"
+    },
+    {
+     "scene": "储蓄",
+     "behavior": "有目标，但有时会为了机会或体验动用储蓄"
+    },
+    {
+     "scene": "投资",
+     "behavior": "对增长机会比较敏感"
+    },
+    {
+     "scene": "奖励自己",
+     "behavior": "容易通过购买心仪物品获得成就感"
+    },
+    {
+     "scene": "收入比较",
+     "behavior": "容易关注同龄人、同行的收入和生活水平"
+    }
+   ],
+   "strengths": [
+    "具有较强的赚钱动力。",
+    "愿意主动寻找机会。",
+    "对个人成长和能力提升有投入意愿。",
+    "不容易满足于长期停滞的状态。",
+    "能够把金钱转化为实现目标的资源。"
+   ],
+   "blindspots": [
+    {
+     "title": "把收入与个人价值绑定",
+     "text": "当收入增长时，你会感到自己更有价值；当收入下降时，可能对自己产生怀疑。"
+    },
+    {
+     "title": "容易陷入消费奖励循环",
+     "text": "辛苦工作后通过购物犒劳自己，购物后又需要努力赚钱来弥补支出。"
+    },
+    {
+     "title": "容易受到攀比和社会比较影响",
+     "text": "看到别人买房、买车、旅行、创业成功时，可能产生自己落后的感觉。"
+    },
+    {
+     "title": "对财富增长的期待可能超过风险承受能力",
+     "text": "有时容易过度乐观，低估投资、创业或高消费带来的不确定性。"
+    },
+    {
+     "title": "即使达到目标，也难以真正满足",
+     "text": "当你达到一个收入目标后，很快又会设立更高的标准，导致自己始终处于追赶状态。"
+    }
+   ],
+   "emotion": {
+    "intro": "你的金钱情绪波动较大，且往往跟着「进度条」走：向前就兴奋，停下就焦躁。",
+    "rows": [
+     {
+      "label": "安心来源",
+      "text": "看到自己在变强：收入上升、能力提升、选择变多。"
+     },
+     {
+      "label": "压力触发点",
+      "text": "停滞、被比较、看到别人跑得更快、目标迟迟没有进展。"
+     },
+     {
+      "label": "满足感",
+      "text": "达成目标的那一刻很强烈，但消退得也快，很快会被下一个目标覆盖。"
+     },
+     {
+      "label": "安全感",
+      "text": "「我有能力选择」比「我有多少存款」更让你安心。"
+     }
+    ]
+   },
+   "relation": [
+    "你可能比较重视独立和个人发展，希望通过自己的努力拥有更多选择。",
+    "但当你过于关注效率、收入和成长时，也可能无意中将人际关系变成比较和竞争。",
+    "在亲密关系中，你需要注意不要把收入能力当作衡量双方价值的标准，也不要让事业目标完全占据生活。"
+   ],
+   "growthIntro": "你需要学习的是：让金钱成为实现人生目标的工具，而不是衡量自身价值的唯一标准。",
+   "growth": [
+    "将财务目标分成收入增长、资产积累和生活体验三个维度。",
+    "为自己设置消费冷静期，减少情绪性奖励消费。",
+    "建立与他人无关的个人成长评价标准。",
+    "在追求收益时，提前明确自己能够承受的最大损失。",
+    "定期回顾已经实现的目标，练习认可当前的自己。",
+    "给生活安排不以赚钱和提升效率为目的的时间。"
+   ],
+   "reflect": [
+    "如果收入暂时停在现在的水平，你还会觉得自己是一个有价值的人吗？",
+    "你最近一次想买东西，是因为喜欢，还是因为「我值得被奖励」？",
+    "你理想中的自由，具体是什么样子的一天？需要多少钱才能实现？"
+   ],
+   "motto": "你可以野心勃勃地追求财富，但不要忘记，你的价值从来不需要用账户余额来证明。",
+   "task": "从追逐外部证明，走向真正拥有选择权。"
+  },
+  {
+   "id": "d",
+   "key": "D",
+   "name": "守护者",
+   "tag": "焦虑与防御型",
+   "headline": "金钱 = 不确定性与心理考题",
+   "color": "#A79AB6",
+   "belief": "钱似乎总是不够安全，我必须时刻保持警惕。",
+   "keywords": [
+    "警觉",
+    "储备",
+    "不确定",
+    "防御"
+   ],
+   "summary": "你对金钱可能存在复杂的情绪，既希望拥有更多，又担心失去、浪费或无法掌控。比起一时的消费快乐，你更看重长期稳定和未来保障。你与金钱的关系里，消耗情绪往往比使用金钱本身更累。",
+   "mechanismIntro": "你对金钱的警觉，往往不是「贪心」，而是一种自我保护。",
+   "mechanism": [
+    {
+     "label": "损失敏感",
+     "text": "相比得到同等金额的快乐，你可能更容易受到金钱损失的影响。"
+    },
+    {
+     "label": "不确定性敏感",
+     "text": "未来收入、工作变化和突发开支容易引发担忧。"
+    },
+    {
+     "label": "安全需求较高",
+     "text": "你希望拥有足够的钱来避免陷入被动。"
+    },
+    {
+     "label": "内在冲突",
+     "text": "既渴望消费带来的满足，又害怕消费后失去保障。"
+    }
+   ],
+   "origin": "这种倾向可能与现实经济压力、成长环境、过去的经济经历或长期形成的思维习惯有关。并不是所有有金钱焦虑的人都经历过贫困或创伤。",
+   "spending": [
+    {
+     "scene": "日常购物",
+     "behavior": "买之前犹豫，买之后可能后悔"
+    },
+    {
+     "scene": "大额消费",
+     "behavior": "反复纠结，难以确定是否值得"
+    },
+    {
+     "scene": "储蓄",
+     "behavior": "可能希望不断增加储备"
+    },
+    {
+     "scene": "投资",
+     "behavior": "害怕亏损，也可能因焦虑而盲目跟风"
+    },
+    {
+     "scene": "奖励自己",
+     "behavior": "有时压抑需求，有时突然补偿性消费"
+    },
+    {
+     "scene": "收入变化",
+     "behavior": "容易担忧未来能否维持当前生活"
+    }
+   ],
+   "strengths": [
+    "对经济风险比较敏感。",
+    "不容易完全忽略未来的不确定性。",
+    "能够意识到金钱对生活稳定的重要性。",
+    "在重要财务决策上通常比较谨慎。",
+    "对财务安全有较强的关注意识。"
+   ],
+   "blindspots": [
+    {
+     "title": "总觉得钱不够，即使客观条件已经改善",
+     "text": "账户余额增加了，但内心的不安可能没有同步减少。"
+    },
+    {
+     "title": "容易陷入过度节省与补偿性消费的循环",
+     "text": "平时不舍得花钱，压抑时间过长后又突然进行超预算消费。"
+    },
+    {
+     "title": "因为害怕损失而回避必要的财务决策",
+     "text": "例如一直不敢学习投资、迟迟不敢为职业发展投入，或者因为担心花错钱而放弃合理的生活改善。"
+    },
+    {
+     "title": "容易把财务问题扩大为自我否定",
+     "text": "当出现经济困难时，可能认为自己能力不够、选择错误，甚至对未来失去信心。"
+    },
+    {
+     "title": "容易受到外界负面信息影响",
+     "text": "经济环境、失业新闻、投资亏损案例，都可能让你对自己的财务状况产生额外担忧。"
+    }
+   ],
+   "emotion": {
+    "intro": "金钱对你来说，常常不是数字问题，而是情绪问题：担心、犹豫、短暂放松，然后再次警觉。",
+    "rows": [
+     {
+      "label": "安心来源",
+      "text": "储备增加、账目清晰、确认「还能撑很久」。"
+     },
+     {
+      "label": "压力触发点",
+      "text": "未来的不确定、突发的账单、看到经济负面新闻、被人问起存款。"
+     },
+     {
+      "label": "满足感",
+      "text": "来得短，常常在买完之后被「是不是不该花」的念头覆盖。"
+     },
+     {
+      "label": "安全感",
+      "text": "需要不断被确认，而不是一次性获得。"
+     }
+    ]
+   },
+   "relation": [
+    "你可能不太愿意公开自己的经济状况，也不喜欢别人询问收入和存款。",
+    "在亲密关系中，你可能既希望对方提供安全感，又担心经济上依赖别人会让自己失去主动权。",
+    "当双方对消费和储蓄的理解不同时，你可能倾向于回避讨论，或者将不满藏在心里。"
+   ],
+   "growthIntro": "你需要学习的不是强迫自己变得大胆，而是逐步建立真实、可验证的财务安全感。",
+   "growth": [
+    "先明确自己的实际月支出和合理应急储备目标，不用无限增加安全线。",
+    "将必要支出、储蓄和自由消费分开管理。",
+    "记录每次消费前后的真实感受，区分实际经济压力和预期焦虑。",
+    "从小额、可承受的体验消费开始，练习安心地花钱。",
+    "重大财务决策尽量基于数据，而不是当下的恐惧。",
+    "如果金钱焦虑已经持续影响睡眠、生活和关系，可以考虑寻求专业心理咨询。"
+   ],
+   "reflect": [
+    "你现在担心的那件事，如果发生，最坏会损失多少？你有多少储备能应对？",
+    "最近一次花钱之后感到后悔，是钱真的不够，还是「不该花」的念头在说话？",
+    "如果不再害怕失去，你最想为自己做的一个决定是什么？"
+   ],
+   "motto": "你值得拥有安全感，但安全感不应该成为你享受生活的门槛。",
+   "task": "从被金钱焦虑牵制，走向温和而真实的掌控。"
+  }
+ ],
+ "combos": [
+  {
+   "ids": [
+    "a",
+    "b"
+   ],
+   "title": "理性规划与情感付出的平衡",
+   "text": "你的账本里往往有两套逻辑：一套用来守住安全线，一套用来维持关系的温度。你愿意为重要的人花钱，但花完之后会下意识地算一遍账。真正让你为难的不是「要不要给」，而是「给了之后我的计划还稳不稳」。这种组合的优势是：你的付出是有余量的、可持续的，不是靠透支自己完成的。需要注意的是，别把情感表达全部换算成金额——不是每一次在意都需要一笔预算；也不必因为一次计划外的人情支出就产生负罪感。成长方向：把「人情」提前写进预算，用可承受的额度表达关心，而不是每次临时决定、事后反悔。"
+  },
+  {
+   "ids": [
+    "a",
+    "c"
+   ],
+   "title": "安全积累与财富增长的平衡",
+   "text": "你既希望财富稳定积累，又渴望通过赚钱实现更高的人生目标。你的内在可能同时存在两种声音：一个声音告诉你「不要冒险，要先保证安全」，另一个声音告诉你「不能一直停留在原地，要抓住机会」。你的优势是既有规划意识，又有进取动力，往往能把想法落地成可执行的步骤。需要注意的是，过度谨慎可能限制成长，而过度追求增长又可能打破原本的安全规划。成长方向：为财富增长设置明确的风险边界，在安全范围内主动争取机会——先划出「不能动的钱」，再用剩下的部分去试。"
+  },
+  {
+   "ids": [
+    "a",
+    "d"
+   ],
+   "title": "强烈的安全需求与潜在焦虑",
+   "text": "你希望钱既稳又够，任何一点不确定都容易被放大。规划用「计划」换安心，警觉用「储备」换安心，两者叠加的结果是：安全线会不断上移——存到了目标，仍然觉得不够。你的优势是风险意识极强，很少犯大错，也极少让自己陷入被动。代价是长期处在「准备状态」，很难真正松下来，享受生活总被推迟到「以后」。成长方向：给安全储备设一个明确的封顶数字，超出部分明确划给体验与成长；把模糊的「万一」写成具体的概率与影响，你会发现大部分恐惧没有想象中庞大。"
+  },
+  {
+   "ids": [
+    "b",
+    "c"
+   ],
+   "title": "情感给予与自我成就的平衡",
+   "text": "你既想成为能照顾别人的人，也想成为让自己满意的人。你愿意为关系投入，但内心也有清晰的目标和野心——当两者争夺同一笔钱时，你会感到拉扯：给自己花像「自私」，给别人花又像「耽误了自己」。你的优势是既有温度又有动力，你的成就常常带着「为了谁」的意义，这让你的努力更有韧性。风险是习惯把自我投资排在最后，长期压缩自己的成长预算，最后既委屈又疲惫。成长方向：把「投资自己」视为对关系负责的一部分，先给自己留出成长与休息的额度，再谈给予。"
+  },
+  {
+   "ids": [
+    "b",
+    "d"
+   ],
+   "title": "渴望给予与害怕失去的矛盾",
+   "text": "你很想对别人好，同时又害怕自己不够、撑不住。于是你可能一边大方地付出，一边在心里反复计算还剩下多少；也可能因为不敢拒绝而答应，事后又陷入焦虑和自责。你的优势是共情能力强、责任感重，在关系里往往是那个可靠的人。风险是善良被透支，长期下来容易对关系产生怨气，甚至突然关闭自己。成长方向：先确定自己的底线数字，再决定能给出多少；练习用非金钱的方式表达在意，让给予变得可持续，而不是一次性燃烧。"
+  },
+  {
+   "ids": [
+    "c",
+    "d"
+   ],
+   "title": "渴望财富自由与害怕经济风险的拉扯",
+   "text": "你既想冲，又怕输。追目标时你很有动力，但每一次投入都会激活对损失的警觉：不敢全力，也不甘于原地。你的优势是比多数人更愿意为机会行动，又比纯粹的冒险者多一层风险意识。风险是长期停在「想动又不敢动」的中间态，既没享受到增长，也没真正获得安稳，内耗比行动更消耗你。成长方向：把资金分成「敢亏的钱」和「不能动的钱」，用可承受的额度去试，而不是每一次都拿全部安全感下注。"
+  }
+ ],
+ "triples": [
+  {
+   "ids": [
+    "a",
+    "b",
+    "c"
+   ],
+   "title": "规划、联结与成就三种倾向并列",
+   "text": "你同时具备三种力量：想把生活经营稳妥的规划感、想让重要的人过得更好的温度、以及想成为更好自己的进取心。三者并不冲突，它们在争夺的其实是同一件事——「这笔钱该优先服务于哪种需要」。你的优势是视角完整，既不会盲目冒险，也不会只顾自己。需要留意的是，三种声音同时出现时容易拖延：既想存、又想给、还想投，最后可能什么都没做。成长方向：给每一笔较大的钱设定一个「首要目的」，其余的顺位靠后，而不是要求每一笔都同时满足三种期待。",
+   "task": "在稳妥、温度与成就之间，排出你的优先次序。"
+  },
+  {
+   "ids": [
+    "a",
+    "b",
+    "d"
+   ],
+   "title": "规划、联结与警觉三种倾向并列",
+   "text": "你既想把账算清楚，又想照顾别人的感受，同时还隐隐担心「留不住」。这让你成为一个非常谨慎、也非常体贴的人：花钱之前会算，花的时候会想对方，花完之后还会不安。优势是你很少做出让自己后悔的大额决定，也很少亏待在乎的人。风险是内耗偏多——每一笔支出都要经过三重审查，久了会疲累，也容易在压抑之后出现补偿性消费。成长方向：为不同类型的支出预设额度，额度内的花费不再反复复盘；把「够用」定义清楚，而不是让警觉无限延长安全线。",
+   "task": "在稳妥、体贴与警觉之间，给安全线一个明确的数字。"
+  },
+  {
+   "ids": [
+    "a",
+    "c",
+    "d"
+   ],
+   "title": "规划、成就与警觉三种倾向并列",
+   "text": "你有清晰的目标感：既要稳，又要往上走，同时害怕一步走错。这种组合常常出现在「很努力，但很难放松」的人身上——你用计划对抗不确定，用成就证明自己，用警觉防止失控。优势是执行力强、风险意识好，往往能在有限资源里做出稳妥的进步。风险是把每一次波动都解读成对自己的否定，收入或进度一旦不如预期，焦虑就会迅速放大。成长方向：把「我做得怎么样」和「我这个月赚了多少」分开评价；为增长设定止损线，而不是为恐惧设定无限延长的准备期。",
+   "task": "在稳妥、成长与警觉之间，把准备期换成一次可承受的尝试。"
+  },
+  {
+   "ids": [
+    "b",
+    "c",
+    "d"
+   ],
+   "title": "联结、成就与警觉三种倾向并列",
+   "text": "你既想温暖地对待身边的人，又想证明自己的价值，同时对金钱本身保持警觉。你可能经常在「给出去」「赚回来」「省下来」之间来回切换：对别人大方，对自己苛刻，对风险敏感。优势是你的动力来源很丰富——关系、成就、安全都能推动你前进，你也很少忽略身边人的处境。风险是容易把自己排在最后，一边付出、一边焦虑、一边追赶，长期处在疲惫状态。成长方向：先确认自己的底线储备，再谈给予与野心；允许自己在某些时刻只考虑「我想要什么」。",
+   "task": "在给予、成就与警觉之间，先把自己的底线准备好。"
+  }
+ ],
+ "disclaimer": "本测试为原创的自我探索内容，结果描述的是本次选择呈现的倾向，不是稳定的人格标签，也不构成心理诊断、投资建议或财务规划意见。四种类型没有优劣之分。如需专业支持，请咨询持证心理咨询师或财务顾问。"
+};</script>
+<script>/* 金钱观心理测试 · 计分模块（money-view-v1）
+ * 纯计数：每个选项为其对应类型 +1；取最大值为主导，并列全部保留。
+ * 同一份答案 + 同一版本 => 同一结果；不做任何加权或个性化修正。
+ */
+var MoneyScoring = (function () {
+  var TYPE_ORDER = ["a", "b", "c", "d"];
+  var TYPE_NAMES = { a: "规划者", b: "联结者", c: "追逐者", d: "守护者" };
+
+  function emptyCounts() {
+    return { a: 0, b: 0, c: 0, d: 0 };
+  }
+
+  function normalizeAnswers(answers) {
+    if (!answers) return [];
+    if (Array.isArray(answers)) return answers.slice();
+    return TYPE_ORDER.map(function (t) { return answers[t]; });
+  }
+
+  function validateAnswers(answers, itemCount) {
+    var list = normalizeAnswers(answers);
+    var errors = [];
+    if (list.length !== itemCount) {
+      errors.push("答案数量应为 " + itemCount + "，实际为 " + list.length);
+      return { ok: false, errors: errors, answers: list };
+    }
+    for (var i = 0; i < list.length; i++) {
+      var v = list[i];
+      if (typeof v !== "string" || ["A", "B", "C", "D"].indexOf(v) < 0) {
+        errors.push("第 " + (i + 1) + " 题答案非法：" + v);
+      }
+    }
+    return { ok: errors.length === 0, errors: errors, answers: list };
+  }
+
+  function computeResult(answers, itemCount) {
+    itemCount = itemCount || 10;
+    var checked = validateAnswers(answers, itemCount);
+    if (!checked.ok) {
+      return { ok: false, errors: checked.errors, counts: null, dominant: [], secondary: [] };
+    }
+
+    var counts = emptyCounts();
+    checked.answers.forEach(function (key) {
+      var type = key.toLowerCase();
+      counts[type] += 1;
+    });
+
+    var max = Math.max(counts.a, counts.b, counts.c, counts.d);
+    var dominant = TYPE_ORDER.filter(function (t) { return counts[t] === max; });
+    var rest = TYPE_ORDER.filter(function (t) { return counts[t] < max; });
+    var secondaryMax = rest.length ? Math.max.apply(null, rest.map(function (t) { return counts[t]; })) : 0;
+    var secondary = rest.filter(function (t) { return counts[t] === secondaryMax && counts[t] > 0; });
+
+    return {
+      ok: true,
+      version: "money-view-v1",
+      counts: counts,
+      total: itemCount,
+      percentages: {
+        a: counts.a * 10, b: counts.b * 10, c: counts.c * 10, d: counts.d * 10
+      },
+      max: max,
+      dominant: dominant,
+      secondary: secondary,
+      tied: dominant.length > 1,
+      comboId: dominant.length > 1 ? dominant.slice().sort().join("+") : null,
+      reason: dominant.length > 1
+        ? "计数并列最高：" + dominant.map(function (t) { return t.toUpperCase() + "·" + TYPE_NAMES[t]; }).join("、")
+        : "唯一最高计数：" + dominant[0].toUpperCase() + "·" + TYPE_NAMES[dominant[0]]
+    };
+  }
+
+  return {
+    TYPE_ORDER: TYPE_ORDER,
+    TYPE_NAMES: TYPE_NAMES,
+    validateAnswers: validateAnswers,
+    computeResult: computeResult
+  };
+})();
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = MoneyScoring;
+}
+</script>
+<script>/* 报告导出：Canvas 排版 → 多页 PDF（中文以图像嵌入，无外部字体依赖）+ 分享海报 PNG */
+var ReportExport = (function () {
+  var W = 1240, H = 1754, M = 92;
+  var CREAM = "#FBF7EF", INK = "#332A21", INK2 = "#5D5146", INK3 = "#8C8073";
+  var GOLD = "#B99257", GOLD2 = "#D8C29A", LINE = "#E6DAC8";
+  var SANS = '"PingFang SC","Noto Sans SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif';
+  var SERIF = '"Songti SC","Noto Serif SC","Noto Serif CJK SC","Noto Serif CJK SC","STSong",serif';
+
+  function typeColor(id) {
+    return { a: "#8FA98F", b: "#D9A97E", c: "#8EA5BE", d: "#A093B2" }[id] || GOLD;
+  }
+  function typeSoft(id) {
+    return { a: "#E8EFE4", b: "#F7E9DA", c: "#E5ECF4", d: "#EFE9F2" }[id] || "#EFE2C9";
+  }
+  function fmtDate(d) {
+    return d.getFullYear() + " 年 " + (d.getMonth() + 1) + " 月 " + d.getDate() + " 日";
+  }
+
+  /* ---------- 文本换行（中文按字、英文按词） ---------- */
+  function splitParagraphs(text) {
+    var sentences = text.match(/[^。！？]+[。！？]?/g) || [text];
+    var parts = [], buf = "";
+    sentences.forEach(function (line) {
+      buf += line;
+      if (buf.replace(/\s/g, "").length >= 90) { parts.push(buf.trim()); buf = ""; }
+    });
+    if (buf.trim()) parts.push(buf.trim());
+    return parts;
+  }
+
+  function wrap(ctx, text, maxWidth) {
+    var lines = [], line = "", buf = "";
+    var tokens = [];
+    for (var i = 0; i < text.length; i++) {
+      var ch = text[i];
+      if (/[A-Za-z0-9$%.]/.test(ch)) {
+        buf += ch;
+      } else {
+        if (buf) { tokens.push(buf); buf = ""; }
+        tokens.push(ch);
+      }
+    }
+    if (buf) tokens.push(buf);
+    for (var t = 0; t < tokens.length; t++) {
+      var tk = tokens[t];
+      var test = line + tk;
+      if (ctx.measureText(test).width > maxWidth && line !== "") {
+        lines.push(line);
+        line = tk.trim() === "" ? "" : tk;
+      } else {
+        line = test;
+      }
+    }
+    if (line !== "") lines.push(line);
+    return lines;
+  }
+
+  function PdfDoc() {
+    this.pages = [];
+    this.pageNo = 0;
+    this.newPage();
+  }
+
+  PdfDoc.prototype.newPage = function () {
+    if (this.canvas) this.finishPage();
+    this.canvas = document.createElement("canvas");
+    this.canvas.width = W;
+    this.canvas.height = H;
+    this.ctx = this.canvas.getContext("2d");
+    this.ctx.fillStyle = CREAM;
+    this.ctx.fillRect(0, 0, W, H);
+    // 顶部装饰：金色细线与圆环
+    this.ctx.strokeStyle = "rgba(185,146,87,.28)";
+    this.ctx.lineWidth = 1;
+    this.ctx.beginPath();
+    this.ctx.moveTo(M, 64); this.ctx.lineTo(W - M, 64); this.ctx.stroke();
+    this.pageNo += 1;
+    this.y = M + 24;
+  };
+
+  PdfDoc.prototype.finishPage = function () {
+    var ctx = this.ctx, pageH = H;
+    ctx.strokeStyle = LINE;
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(M, pageH - 78); ctx.lineTo(W - M, pageH - 78); ctx.stroke();
+    ctx.font = "400 20px " + SANS;
+    ctx.fillStyle = INK3;
+    ctx.textAlign = "left";
+    ctx.fillText("金钱观心理测试 · 你的专属报告", M, pageH - 46);
+    ctx.textAlign = "right";
+    ctx.fillText("第 " + this.pageNo + " 页", W - M, pageH - 46);
+    ctx.textAlign = "left";
+    this.pages.push(this.canvas.toDataURL("image/jpeg", 0.92));
+    this.canvas = null;
+  };
+
+  PdfDoc.prototype.ensure = function (height) {
+    if (this.y + height > H - 110) this.newPage();
+  };
+
+  PdfDoc.prototype.para = function (text, opt) {
+    opt = opt || {};
+    var size = opt.size || 27, lh = opt.lh || 1.85, color = opt.color || INK2;
+    var font = (opt.weight || 400) + " " + size + "px " + (opt.serif ? SERIF : SANS);
+    this.ctx.font = font;
+    var maxW = W - M * 2 - (opt.indent || 0);
+    var lines = wrap(this.ctx, text, maxW);
+    var lineH = size * lh;
+    for (var i = 0; i < lines.length; i++) {
+      this.ensure(lineH);
+      this.ctx.font = font;
+      this.ctx.fillStyle = color;
+      this.ctx.fillText(lines[i], M + (opt.indent || 0), this.y + size);
+      this.y += lineH;
+    }
+    this.y += opt.gap === undefined ? 10 : opt.gap;
+  };
+
+  PdfDoc.prototype.heading = function (no, text) {
+    var top = 34;
+    this.ensure(top + 56);
+    this.y += 18;
+    this.ctx.font = "600 23px " + SERIF;
+    this.ctx.fillStyle = GOLD;
+    if (no) this.ctx.fillText(no, M, this.y + 22);
+    this.ctx.font = "600 33px " + SERIF;
+    this.ctx.fillStyle = INK;
+    this.ctx.fillText(text, M + (no ? 58 : 0), this.y + 20);
+    this.y += 44;
+    this.ctx.strokeStyle = LINE;
+    this.ctx.lineWidth = 1;
+    this.ctx.beginPath(); this.ctx.moveTo(M, this.y); this.ctx.lineTo(M + 72, this.y); this.ctx.stroke();
+    this.y += 20;
+  };
+
+  PdfDoc.prototype.bullets = function (items, opt) {
+    opt = opt || {};
+    for (var i = 0; i < items.length; i++) {
+      var label = opt.labels ? String.fromCharCode(65 + i) : "•";
+      var tx = M + 34;
+      var item = items[i];
+      this.ctx.font = "500 26px " + SANS;
+      var labW = opt.labels ? this.ctx.measureText(label + "  ").width : 24;
+      this.para(item, { size: 25, lh: 1.75, indent: 34 + 0, gap: 12 });
+      this.ctx.fillStyle = opt.color || GOLD;
+      this.ctx.font = "600 24px " + SANS;
+    }
+  };
+
+  PdfDoc.prototype.numList = function (items, opt) {
+    opt = opt || {};
+    for (var i = 0; i < items.length; i++) {
+      this.ensure(44);
+      this.ctx.fillStyle = INK3;
+      this.ctx.font = "400 19px " + SANS;
+      this.ctx.fillText(String(i + 1).padStart(2, "0"), M + 2, this.y + 24);
+      this.para(items[i], { size: 25, lh: 1.75, indent: 40, gap: 12 });
+    }
+  };
+
+  PdfDoc.prototype.labeled = function (label, text) {
+    this.ensure(46);
+    var labelFont = "600 23px " + SANS;
+    this.ctx.font = labelFont;
+    var w = this.ctx.measureText(label).width;
+    this.ctx.fillStyle = INK;
+    this.ctx.fillText(label, M, this.y + 24);
+    this.para(text, { size: 23, lh: 1.7, indent: w + 16, gap: 12 });
+  };
+
+  PdfDoc.prototype.quote = function (text, caption) {
+    var self = this;
+    var size = 27, lh = 1.9;
+    this.ctx.font = "400 " + size + "px " + SERIF;
+    var lines = wrap(this.ctx, "「" + text + "」", W - M * 2 - 72);
+    var blockH = lines.length * size * lh + (caption ? 120 : 76);
+    this.ensure(blockH + 20);
+    var top = this.y;
+    this.ctx.fillStyle = INK;
+    this.ctx.fillRect(M, top, W - M * 2, blockH);
+    this.ctx.strokeStyle = GOLD2;
+    this.ctx.lineWidth = 1;
+    this.ctx.strokeRect(M + 10, top + 10, W - M * 2 - 20, blockH - 20);
+    var ty = top + 46;
+    for (var i = 0; i < lines.length; i++) {
+      this.ctx.font = "400 " + size + "px " + SERIF;
+      this.ctx.fillStyle = "#F5EAD3";
+      this.ctx.fillText(lines[i], M + 28, ty + size);
+      ty += size * lh;
+    }
+    if (caption) {
+      this.ctx.font = "400 19px " + SANS;
+      this.ctx.fillStyle = "rgba(245,234,211,.75)";
+      this.ctx.fillText(caption, M + 28, ty + 34);
+    }
+    this.y = top + blockH + 22;
+  };
+
+  PdfDoc.prototype.rows = function (rows) {
+    for (var i = 0; i < rows.length; i++) {
+      this.ensure(48);
+      this.ctx.font = "500 23px " + SANS;
+      this.ctx.fillStyle = INK;
+      this.ctx.fillText(rows[i][0], M, this.y + 26);
+      this.para(rows[i][1], { size: 24, lh: 1.65, indent: 178, gap: 10 });
+      this.ctx.strokeStyle = "#F0E7D8";
+      this.ctx.beginPath(); this.ctx.moveTo(M, this.y - 2); this.ctx.lineTo(W - M, this.y - 2); this.ctx.stroke();
+    }
+  };
+
+  PdfDoc.prototype.bars = function (result, data) {
+    var self = this;
+    var labels = { a: "A · 规划者", b: "B · 联结者", c: "C · 追逐者", d: "D · 守护者" };
+    this.ensure(210);
+    ["a", "b", "c", "d"].forEach(function (k) {
+      var y = self.y + 8;
+      self.ctx.font = "400 23px " + SANS;
+      self.ctx.fillStyle = INK2;
+      self.ctx.fillText(labels[k], M, y + 18);
+      var x0 = M + 180, wBar = W - M * 2 - 180 - 110;
+      self.ctx.fillStyle = "#F1EADD";
+      self.ctx.beginPath(); self.ctx.roundRect(x0, y + 6, wBar, 12, 6); self.ctx.fill();
+      var pct = result.counts[k] / 10;
+      self.ctx.fillStyle = typeColor(k);
+      self.ctx.beginPath(); self.ctx.roundRect(x0, y + 6, Math.max(2, wBar * pct), 12, 6); self.ctx.fill();
+      self.ctx.font = "500 20px " + SANS;
+      self.ctx.fillStyle = INK3;
+      self.ctx.textAlign = "right";
+      self.ctx.fillText(result.counts[k] + "/10", W - M, y + 20);
+      self.ctx.textAlign = "left";
+      self.y += 46;
+    });
+    this.y += 8;
+  };
+
+  PdfDoc.prototype.typeHeader = function (t) {
+    this.ensure(132);
+    var h = 104;
+    this.ctx.fillStyle = typeSoft(t.id);
+    this.ctx.beginPath(); this.ctx.roundRect(M, this.y, W - M * 2, h, 14); this.ctx.fill();
+    this.ctx.fillStyle = typeColor(t.id);
+    this.ctx.beginPath(); this.ctx.arc(M + 52, this.y + h / 2, 22, 0, Math.PI * 2); this.ctx.fill();
+    this.ctx.fillStyle = "#fff";
+    this.ctx.font = "600 24px " + SANS;
+    this.ctx.textAlign = "center";
+    this.ctx.fillText(t.key, M + 52, this.y + h / 2 + 9);
+    this.ctx.textAlign = "left";
+    this.ctx.fillStyle = INK;
+    this.ctx.font = "600 40px " + SERIF;
+    this.ctx.fillText(t.name, M + 90, this.y + 50);
+    this.ctx.font = "400 23px " + SANS;
+    this.ctx.fillStyle = INK3;
+    this.ctx.fillText(t.tag + " · " + t.headline, M + 92, this.y + 82);
+    this.y += h + 26;
+  };
+
+  /* ---------- 报告内容 ---------- */
+  function build(result, data, meta) {
+    var doc = new PdfDoc();
+    var types = {};
+    data.types.forEach(function (t) { types[t.id] = t; });
+    var names = result.dominant.map(function (id) { return types[id].name; });
+    var main = types[result.dominant[0]];
+
+    // 封面
+    doc.y += 64;
+    doc.ctx.font = "400 19px " + SANS;
+    doc.ctx.fillStyle = INK3;
+    doc.ctx.fillText("M O N E Y   &   S E L F   ·   原 创 自 我 探 索", M, doc.y + 20);
+    doc.y += 130;
+    doc.ctx.font = "600 74px " + SERIF;
+    doc.ctx.fillStyle = INK;
+    doc.ctx.fillText("金钱观心理测试", M, doc.y);
+    doc.y += 44;
+    doc.ctx.strokeStyle = GOLD;
+    doc.ctx.lineWidth = 2;
+    doc.ctx.beginPath(); doc.ctx.moveTo(M, doc.y); doc.ctx.lineTo(M + 96, doc.y); doc.ctx.stroke();
+    doc.y += 80;
+    doc.ctx.font = "400 25px " + SANS;
+    doc.ctx.fillStyle = INK3;
+    doc.ctx.fillText("你的金钱观倾向", M, doc.y);
+    doc.y += 74;
+    var nameText = names.join("  ×  ");
+    var pdfNameSize = names.length === 1 ? 96 : (names.length === 2 ? 78 : 58);
+    doc.ctx.font = "600 " + pdfNameSize + "px " + SERIF;
+    doc.ctx.fillStyle = INK;
+    doc.ctx.fillText(nameText, M, doc.y);
+    doc.y += 36;
+    doc.ctx.font = "400 26px " + SANS;
+    doc.ctx.fillStyle = typeColor(main.id);
+    doc.ctx.fillText(result.dominant.map(function (id) { return types[id].tag; }).join(" · "), M, doc.y + 28);
+    doc.y += 90;
+    var bLines = wrap(doc.ctx, main.belief, W - M * 2 - 40);
+    doc.ctx.font = "400 32px " + SERIF;
+    doc.ctx.fillStyle = INK2;
+    var by = doc.y;
+    doc.ctx.fillStyle = GOLD2;
+    doc.ctx.fillRect(M, by, 3, bLines.length * 56);
+    bLines.forEach(function (l, i) {
+      doc.ctx.font = "400 30px " + SERIF;
+      doc.ctx.fillStyle = INK2;
+      doc.ctx.fillText(l, M + 24, by + 40 + i * 56);
+    });
+    doc.y = by + bLines.length * 56 + 40;
+
+    // 关键词
+    var kwX = M, kwY = doc.y + 16;
+    doc.ctx.font = "400 22px " + SANS;
+    var kwList = result.dominant.length === 1 ? main.keywords.slice(0, 4).map(function (k) { return { k: k, id: main.id }; })
+      : result.dominant.map(function (id) { return types[id].keywords.slice(0, 2).map(function (k) { return { k: k, id: id }; }); })
+          .reduce(function (a, b) { return a.concat(b); }, []);
+    kwList.forEach(function (item) {
+      var k = item.k;
+      var w = doc.ctx.measureText(k).width + 40;
+      if (kwX + w > W - M) { kwX = M; kwY += 56; }
+      doc.ctx.fillStyle = typeSoft(item.id);
+      doc.ctx.beginPath(); doc.ctx.roundRect(kwX, kwY, w, 42, 21); doc.ctx.fill();
+      doc.ctx.fillStyle = INK2;
+      doc.ctx.fillText(k, kwX + 20, kwY + 29);
+      kwX += w + 12;
+    });
+    doc.y = kwY + 46;
+
+    doc.y += 26;
+    doc.para("本次作答：" + ["a", "b", "c", "d"].map(function (k) {
+      return k.toUpperCase() + " " + result.counts[k];
+    }).join(" · ") + "　（共 10 题）", { size: 21, color: INK3, gap: 6 });
+    doc.para("生成日期：" + fmtDate(meta.date), { size: 21, color: INK3, gap: 6 });
+    doc.y += 24;
+    doc.para("本报告为原创自我探索内容，描述本次选择呈现的倾向，不是稳定人格标签，也不构成心理诊断、投资建议或财务规划意见。四种类型没有优劣之分。", { size: 20, color: INK3, lh: 1.8, gap: 0 });
+
+    // 报告目录
+    doc.y += 42;
+    doc.ctx.strokeStyle = LINE;
+    doc.ctx.lineWidth = 1;
+    doc.ctx.beginPath(); doc.ctx.moveTo(M, doc.y); doc.ctx.lineTo(W - M, doc.y); doc.ctx.stroke();
+    doc.y += 26;
+    doc.ctx.font = "400 19px " + SANS;
+    doc.ctx.fillStyle = GOLD;
+    doc.ctx.fillText("本 报 告 包 含", M, doc.y + 18);
+    doc.y += 42;
+    var toc = ["类型概述", "深层心理机制", "消费行为画像", "金钱优势",
+               "容易忽视的盲区", "金钱与情绪", "金钱与人际关系", "成长方向",
+               "三个自我觉察问题", "专属寄语"];
+    doc.ctx.font = "400 21px " + SANS;
+    toc.forEach(function (item, i) {
+      var col = i % 2, row = Math.floor(i / 2);
+      doc.ctx.fillStyle = INK3;
+      doc.ctx.fillText("—", M + col * 340, doc.y + row * 42 + 20);
+      doc.ctx.fillStyle = INK2;
+      doc.ctx.fillText(item, M + col * 340 + 26, doc.y + row * 42 + 20);
+    });
+    doc.y += Math.ceil(toc.length / 2) * 42;
+
+    // 分布页
+    doc.newPage();
+    doc.heading("", "你的金钱观倾向分布");
+    doc.para("这是本次答题的个人选项分布，不代表与其他测试者相比的比例。", { size: 21, color: INK3, gap: 16 });
+    doc.bars(result, data);
+    var maxT = result.dominant[0];
+    doc.para("主导类型：" + result.dominant.map(function (id) { return id.toUpperCase() + " · " + types[id].name; }).join("、") + "。", { size: 24, gap: 8 });
+    if (result.secondary.length) {
+      doc.para("次要倾向：" + result.secondary.map(function (id) { return id.toUpperCase() + " · " + types[id].name; }).join("、") + "。", { size: 24, gap: 8 });
+    }
+
+    doc.y += 16;
+    doc.heading("", "四种类型速览");
+    data.types.forEach(function (t) {
+      doc.ensure(120);
+      doc.ctx.fillStyle = typeSoft(t.id);
+      doc.ctx.beginPath(); doc.ctx.roundRect(M, doc.y, W - M * 2, 104, 12); doc.ctx.fill();
+      doc.ctx.fillStyle = typeColor(t.id);
+      doc.ctx.beginPath(); doc.ctx.arc(M + 40, doc.y + 38, 18, 0, Math.PI * 2); doc.ctx.fill();
+      doc.ctx.fillStyle = "#fff";
+      doc.ctx.font = "600 19px " + SANS;
+      doc.ctx.textAlign = "center";
+      doc.ctx.fillText(t.key, M + 40, doc.y + 45);
+      doc.ctx.textAlign = "left";
+      doc.ctx.fillStyle = INK;
+      doc.ctx.font = "600 28px " + SERIF;
+      doc.ctx.fillText(t.name, M + 72, doc.y + 38);
+      doc.ctx.font = "400 20px " + SANS;
+      doc.ctx.fillStyle = INK3;
+      doc.ctx.fillText(t.tag, M + 72 + doc.ctx.measureText(t.name + "        ").width, doc.y + 38);
+      doc.ctx.font = "400 21px " + SANS;
+      doc.ctx.fillStyle = INK2;
+      doc.ctx.fillText(t.keywords.join(" / "), M + 72, doc.y + 74);
+      doc.y += 118;
+    });
+    doc.y += 10;
+    doc.para(result.dominant.length > 1
+      ? "本次有 " + result.dominant.length + " 种倾向并列主导，接下来依次呈现每种类型的完整报告，最后附上组合解读。"
+      : "接下来是本次主导类型的完整报告。", { size: 22, color: INK3, lh: 1.8 });
+
+    // 各主导类型
+    result.dominant.forEach(function (id, idx) {
+      var t = types[id];
+      if (idx === 0) doc.newPage();
+      else doc.ensure(620);
+      doc.typeHeader(t);
+      doc.heading("01", "类型概述");
+      doc.para(t.summary, { size: 26 });
+      doc.heading("02", "深层心理机制");
+      doc.para(t.mechanismIntro, { size: 24, color: INK3 });
+      t.mechanism.forEach(function (m) {
+        doc.labeled(m.label, m.text);
+      });
+      doc.para(t.origin, { size: 24, color: INK3 });
+      doc.heading("03", "消费行为画像");
+      doc.rows(t.spending.map(function (s) { return [s.scene, s.behavior]; }));
+      doc.heading("04", "你的金钱优势");
+      doc.numList(t.strengths);
+      doc.heading("05", "容易忽视的盲区");
+      t.blindspots.forEach(function (b, i) {
+        doc.ensure(50);
+        doc.ctx.font = "600 25px " + SANS;
+        doc.ctx.fillStyle = INK;
+        var title = (i + 1) + ". " + b.title;
+        doc.ctx.fillText(title, M, doc.y + 27);
+        doc.y += 40;
+        doc.para(b.text, { size: 24, gap: 12 });
+      });
+      doc.heading("06", "金钱与情绪");
+      doc.para(t.emotion.intro, { size: 24, color: INK3 });
+      doc.rows(t.emotion.rows.map(function (r) { return [r.label, r.text]; }));
+      doc.heading("07", "金钱与人际关系");
+      t.relation.forEach(function (p) { doc.para(p, { size: 25, gap: 8 }); });
+      doc.heading("08", "成长方向");
+      doc.para(t.growthIntro, { size: 24, color: INK3 });
+      doc.numList(t.growth);
+      doc.heading("09", "三个自我觉察问题");
+      t.reflect.forEach(function (q, i) {
+        doc.ensure(46);
+        doc.ctx.font = "600 24px " + SERIF;
+        doc.ctx.fillStyle = GOLD;
+        doc.ctx.fillText("0" + (i + 1), M, doc.y + 26);
+        doc.para(q, { size: 24, indent: 52, gap: 12 });
+      });
+      doc.heading("10", "专属于你的一句话");
+      doc.quote(t.motto, "你的课题：" + t.task);
+    });
+
+    // 组合解读
+    if (result.dominant.length > 1) {
+      var combo = null;
+      if (result.dominant.length === 2) {
+        combo = data.combos.filter(function (c) { return c.ids.slice().sort().join("+") === result.dominant.slice().sort().join("+"); })[0];
+      } else if (result.dominant.length === 3) {
+        combo = data.triples.filter(function (c) { return c.ids.slice().sort().join("+") === result.dominant.slice().sort().join("+"); })[0];
+      }
+      if (combo) {
+        doc.newPage();
+        doc.heading("", result.dominant.length === 2 ? "组合解读" : "三元并列解读");
+        doc.ctx.font = "600 30px " + SERIF;
+        doc.ctx.fillStyle = INK;
+        doc.ctx.fillText(combo.title, M, doc.y + 28);
+        doc.y += 56;
+        splitParagraphs(combo.text).forEach(function (part) {
+          doc.para(part, { size: 26, lh: 1.95, gap: 18 });
+        });
+        doc.para("并列类型：" + result.dominant.map(function (id) { return id.toUpperCase() + " · " + types[id].name; }).join("、") + "。并列表示两种（或三种）倾向在本次作答中同等突出，顺序不代表优先级。", { size: 23, color: INK3 });
+      }
+    }
+
+    // 尾页说明
+    doc.ensure(200);
+    doc.heading("", "关于这个测试");
+    doc.para("金钱观心理测试是一套原创的自我探索内容，由 10 个情境题组成。四种类型（规划者、联结者、追逐者、守护者）描述的是人在金钱情境中常见的反应模式，不是心理学诊断工具，也没有经过量表级的信效度验证。", { size: 24 });
+    doc.para("结果用于帮助你看清自己与金钱的关系：你的安全感从哪里来、你如何用钱表达在意、你的焦虑指向什么。如果金钱相关的焦虑已经持续影响睡眠、生活或关系，建议寻求专业心理咨询支持。", { size: 24 });
+
+    doc.finishPage();
+
+    var blob = createPdf(doc.pages);
+    return { blob: blob, pages: doc.pages.length };
+  }
+
+  /* ---------- 最小 PDF 封装（JPEG 页图） ---------- */
+  function createPdf(dataUrls) {
+    var pageW = 595.28, pageH = 841.89;
+    var chunks = [];
+    var offsets = [];
+    var pos = 0;
+    function push(str) {
+      var bytes = new Uint8Array(str.length);
+      for (var i = 0; i < str.length; i++) bytes[i] = str.charCodeAt(i) & 0xff;
+      chunks.push(bytes);
+      pos += bytes.length;
+    }
+    function pushBytes(bytes) {
+      chunks.push(bytes);
+      pos += bytes.length;
+    }
+    function dataUrlToBytes(u) {
+      var b64 = u.split(",")[1];
+      var bin = atob(b64);
+      var arr = new Uint8Array(bin.length);
+      for (var i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+      return arr;
+    }
+
+    push("%PDF-1.4\n");
+
+    var pageCount = dataUrls.length;
+    var refs = [];
+    var nextRef = 3;
+    for (var i = 0; i < pageCount; i++) {
+      refs.push({ page: nextRef++, content: nextRef++, image: nextRef++ });
+    }
+
+    offsets[1] = pos;
+    push("1 0 obj\n<< /Type /Catalog /Pages 2 0 R >>\nendobj\n");
+
+    offsets[2] = pos;
+    var kids = refs.map(function (r) { return r.page + " 0 R"; }).join(" ");
+    push("2 0 obj\n<< /Type /Pages /Kids [" + kids + "] /Count " + pageCount + " >>\nendobj\n");
+
+    for (var p = 0; p < pageCount; p++) {
+      var r = refs[p];
+      var img = dataUrlToBytes(dataUrls[p]);
+
+      offsets[r.page] = pos;
+      push(r.page + " 0 obj\n<< /Type /Page /Parent 2 0 R /MediaBox [0 0 " + pageW + " " + pageH + "] /Resources << /XObject << /Im0 " + r.image + " 0 R >> >> /Contents " + r.content + " 0 R >>\nendobj\n");
+
+      var streamStr = "q " + pageW + " 0 0 " + pageH + " 0 0 cm /Im0 Do Q\n";
+      offsets[r.content] = pos;
+      push(r.content + " 0 obj\n<< /Length " + streamStr.length + " >>\n");
+      push("stream\n" + streamStr + "endstream\nendobj\n");
+
+      offsets[r.image] = pos;
+      push(r.image + " 0 obj\n<< /Type /XObject /Subtype /Image /Width " + W + " /Height " + H + " /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length " + img.length + " >>\nstream\n");
+      pushBytes(img);
+      push("\nendstream\nendobj\n");
+    }
+
+    var xrefStart = pos;
+    var total = nextRef;
+    var xref = "xref\n0 " + total + "\n0000000000 65535 f \n";
+    for (var o = 1; o < total; o++) {
+      xref += String(offsets[o]).padStart(10, "0") + " 00000 n \n";
+    }
+    push(xref);
+    push("trailer\n<< /Size " + total + " /Root 1 0 R >>\nstartxref\n" + xrefStart + "\n%%EOF\n");
+
+    var totalLen = chunks.reduce(function (s, c) { return s + c.length; }, 0);
+    var out = new Uint8Array(totalLen);
+    var off = 0;
+    chunks.forEach(function (c) { out.set(c, off); off += c.length; });
+    return new Blob([out], { type: "application/pdf" });
+  }
+
+  /* ---------- 分享海报 ---------- */
+  function poster(result, data) {
+    var PW = 1080, PH = 1440;
+    var c = document.createElement("canvas");
+    c.width = PW; c.height = PH;
+    var ctx = c.getContext("2d");
+    var main = data.types.filter(function (t) { return t.id === result.dominant[0]; })[0];
+    var names = result.dominant.map(function (id) {
+      return data.types.filter(function (t) { return t.id === id; })[0].name;
+    });
+
+    // 背景
+    var bg = ctx.createLinearGradient(0, 0, PW, PH);
+    bg.addColorStop(0, "#FBF6EB"); bg.addColorStop(.55, "#F6EFE1"); bg.addColorStop(1, "#F3E8D4");
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, PW, PH);
+
+    // 光晕
+    var glow = ctx.createRadialGradient(PW - 120, 120, 10, PW - 120, 120, 460);
+    glow.addColorStop(0, "rgba(216,194,154,.55)"); glow.addColorStop(1, "rgba(216,194,154,0)");
+    ctx.fillStyle = glow;
+    ctx.fillRect(0, 0, PW, PH);
+
+    // 金色双线框
+    ctx.strokeStyle = "rgba(185,146,87,.5)";
+    ctx.lineWidth = 2;
+    ctx.strokeRect(44, 44, PW - 88, PH - 88);
+    ctx.strokeStyle = "rgba(185,146,87,.22)";
+    ctx.lineWidth = 1;
+    ctx.strokeRect(54, 54, PW - 108, PH - 108);
+
+    var x = 96;
+    ctx.textAlign = "left";
+    ctx.font = "400 22px " + SANS;
+    ctx.fillStyle = INK3;
+    ctx.fillText("M O N E Y   &   S E L F", x, 128);
+    ctx.font = "500 30px " + SERIF;
+    ctx.fillStyle = INK;
+    ctx.fillText("金钱观心理测试", x, 178);
+
+    ctx.font = "400 26px " + SANS;
+    ctx.fillStyle = typeColor(main.id);
+    ctx.fillText("YOUR MONEY STORY", x, 268);
+
+    var nameSize = names.length === 1 ? 128 : (names.length === 2 ? 104 : 64);
+    ctx.font = "600 " + nameSize + "px " + SERIF;
+    ctx.fillStyle = INK;
+    ctx.fillText(names.join(" × "), x, 384);
+
+    ctx.font = "400 32px " + SANS;
+    ctx.fillStyle = INK3;
+    ctx.fillText(result.dominant.map(function (id) {
+      return data.types.filter(function (t) { return t.id === id; })[0].tag;
+    }).join(" · "), x, 456);
+
+    // 信念
+    ctx.font = "400 38px " + SERIF;
+    var bLines = wrap(ctx, "「" + main.belief + "」", PW - x * 2 - 30);
+    var by = 500;
+    ctx.fillStyle = "rgba(185,146,87,.9)";
+    ctx.fillRect(x, by, 3, bLines.length * 62);
+    bLines.forEach(function (l, i) {
+      ctx.font = "400 38px " + SERIF;
+      ctx.fillStyle = INK2;
+      ctx.fillText(l, x + 26, by + 48 + i * 62);
+    });
+
+    // 关键词
+    var ky = by + bLines.length * 62 + 34;
+    var kx = x;
+    ctx.font = "400 26px " + SANS;
+    var kwItems = result.dominant.length === 1
+      ? main.keywords.slice(0, 4).map(function (k) { return { k: k, id: main.id }; })
+      : result.dominant.map(function (id) {
+          var t = data.types.filter(function (x) { return x.id === id; })[0];
+          return t.keywords.slice(0, 2).map(function (k) { return { k: k, id: id }; });
+        }).reduce(function (a, b) { return a.concat(b); }, []);
+    kwItems.forEach(function (item) {
+      var w = ctx.measureText(item.k).width + 48;
+      if (kx + w > PW - x) { kx = x; ky += 62; }
+      ctx.fillStyle = typeSoft(item.id);
+      ctx.beginPath(); ctx.roundRect(kx, ky, w, 50, 25); ctx.fill();
+      ctx.fillStyle = INK2;
+      ctx.fillText(item.k, kx + 24, ky + 34);
+      kx += w + 14;
+    });
+
+    // 分布
+    var dy = ky + 110;
+    ctx.font = "400 24px " + SANS;
+    ctx.fillStyle = INK3;
+    ctx.fillText("本次作答分布 · 个人选项占比", x, dy);
+    dy += 22;
+    var labels = { a: "A 规划者", b: "B 联结者", c: "C 追逐者", d: "D 守护者" };
+    ["a", "b", "c", "d"].forEach(function (k) {
+      var yy = dy + 30;
+      ctx.font = "400 26px " + SANS;
+      ctx.fillStyle = INK2;
+      ctx.fillText(labels[k], x, yy);
+      var x0 = x + 170, barW = PW - x * 2 - 170 - 90;
+      ctx.fillStyle = "#EFE5D3";
+      ctx.beginPath(); ctx.roundRect(x0, yy - 22, barW, 14, 7); ctx.fill();
+      ctx.fillStyle = typeColor(k);
+      ctx.beginPath(); ctx.roundRect(x0, yy - 22, Math.max(2, barW * result.counts[k] / 10), 14, 7); ctx.fill();
+      ctx.font = "500 24px " + SANS;
+      ctx.textAlign = "right";
+      ctx.fillStyle = INK3;
+      ctx.fillText(result.counts[k] + "/10", PW - x, yy - 2);
+      ctx.textAlign = "left";
+      dy += 54;
+    });
+
+    // 金钱课题
+    var ty2 = Math.max(dy + 40, PH - 470);
+    ctx.strokeStyle = "rgba(185,146,87,.35)";
+    ctx.beginPath(); ctx.moveTo(x, ty2); ctx.lineTo(PW - x, ty2); ctx.stroke();
+    ctx.font = "400 22px " + SANS;
+    ctx.fillStyle = GOLD;
+    ctx.fillText("你 的 金 钱 课 题", x, ty2 + 46);
+    var taskText = main.task;
+    if (result.dominant.length > 1) {
+      var comboForPoster = result.dominant.length === 2
+        ? data.combos.filter(function (c) { return c.ids.slice().sort().join("+") === result.dominant.slice().sort().join("+"); })[0]
+        : data.triples.filter(function (c) { return c.ids.slice().sort().join("+") === result.dominant.slice().sort().join("+"); })[0];
+      if (comboForPoster) taskText = comboForPoster.task || (comboForPoster.title + "。");
+    }
+    ctx.font = "400 34px " + SERIF;
+    ctx.fillStyle = INK;
+    var taskLines = wrap(ctx, taskText, PW - x * 2);
+    taskLines.forEach(function (l, i) { ctx.fillText(l, x, ty2 + 96 + i * 52); });
+
+    // 底部
+    var fy = PH - 178;
+    ctx.strokeStyle = "rgba(185,146,87,.35)";
+    ctx.beginPath(); ctx.moveTo(x, fy); ctx.lineTo(PW - x, fy); ctx.stroke();
+    ctx.font = "400 24px " + SANS;
+    ctx.fillStyle = INK3;
+    ctx.fillText("原创自我探索测试 · 四种类型没有优劣之分", x, fy + 48);
+    ctx.fillText("结果不构成心理诊断、投资建议或财务规划意见", x, fy + 86);
+    ctx.font = "400 20px " + SANS;
+    ctx.fillStyle = "rgba(140,128,115,.7)";
+    ctx.fillText(fmtDate(new Date()), x, fy + 122);
+
+    return new Promise(function (resolve) {
+      c.toBlob(function (blob) { resolve(blob); }, "image/png");
+    });
+  }
+
+  return { build: build, poster: poster, createPdf: createPdf };
+})();
+</script>
+<script>/* 金钱观心理测试 · 页面逻辑 */
+(function () {
+  var DATA = window.__DATA__;
+  var STORE_KEY = "moneyview.v1.state";
+  var TYPE_NAMES = { a: "规划者", b: "联结者", c: "追逐者", d: "守护者" };
+  var state = { view: "home", step: 0, answers: new Array(DATA.items.length).fill(null), result: null };
+  var advanceTimer = null;
+  var advanceToken = 0;
+  var busy = false;
+
+  var el = {};
+  function $(id) { return document.getElementById(id); }
+
+  /* ---------- 工具 ---------- */
+  function splitParagraphs(text) {
+  var sentences = text.match(/[^。！？]+[。！？]?/g) || [text];
+  var parts = [], buf = "";
+  sentences.forEach(function (line) {
+    buf += line;
+    if (buf.replace(/\s/g, "").length >= 90) { parts.push(buf); buf = ""; }
+  });
+  if (buf.trim()) parts.push(buf);
+  return parts.map(function (t) { return "<p>" + esc(t.trim()) + "</p>"; }).join("");
+}
+
+function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function typeOf(id) { return DATA.types.filter(function (t) { return t.id === id; })[0]; }
+  function color(id) { return typeOf(id).color; }
+  function soft(id) {
+    return { a: "#E8EFE4", b: "#F7E9DA", c: "#E5ECF4", d: "#EFE9F2" }[id] || "#EFE2C9";
+  }
+  function toast(msg) {
+    el.toast.textContent = msg;
+    el.toast.classList.add("show");
+    clearTimeout(toast._t);
+    toast._t = setTimeout(function () { el.toast.classList.remove("show"); }, 2600);
+  }
+  function showMask(text) {
+    el.maskText.textContent = text || "正在生成…";
+    el.mask.classList.add("show");
+  }
+  function hideMask() { el.mask.classList.remove("show"); }
+  function saveBlob(blob, filename) {
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url; a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () {
+      URL.revokeObjectURL(url);
+      a.remove();
+    }, 1500);
+  }
+
+  /* ---------- 存档 ---------- */
+  function persist() {
+    try {
+      localStorage.setItem(STORE_KEY, JSON.stringify({
+        v: DATA.version, view: state.view, step: state.step, answers: state.answers
+      }));
+    } catch (e) { /* 隐私模式忽略 */ }
+  }
+  function loadStore() {
+    try {
+      var raw = localStorage.getItem(STORE_KEY);
+      if (!raw) return null;
+      var s = JSON.parse(raw);
+      if (!s || s.v !== DATA.version) return null;
+      if (!Array.isArray(s.answers) || s.answers.length !== DATA.items.length) return null;
+      var valid = s.answers.every(function (a) { return a === null || ["A", "B", "C", "D"].indexOf(a) >= 0; });
+      if (!valid) return null;
+      return s;
+    } catch (e) { return null; }
+  }
+  function clearStore() {
+    try { localStorage.removeItem(STORE_KEY); } catch (e) {}
+  }
+
+  /* ---------- 首页 ---------- */
+  function renderHome() {
+    state.view = "home";
+    persist();
+    el.home.hidden = false;
+    el.quiz.hidden = true;
+    el.result.hidden = true;
+    document.querySelector(".app").classList.remove("is-result");
+    window.scrollTo({ top: 0 });
+  }
+
+  /* ---------- 答题 ---------- */
+  function answeredCount() {
+    return state.answers.filter(function (a) { return a !== null; }).length;
+  }
+
+  function renderQuiz() {
+    state.view = "quiz";
+    persist();
+    el.home.hidden = true;
+    el.quiz.hidden = false;
+    el.result.hidden = true;
+    document.querySelector(".app").classList.remove("is-result");
+
+    var q = DATA.items[state.step];
+    var total = DATA.items.length;
+    var selected = state.answers[state.step];
+
+    el.qCount.innerHTML = "第 <b>" + (state.step + 1) + "</b> / " + total + " 题";
+    el.progressFill.style.width = (answeredCount() / total * 100) + "%";
+
+    el.qNum.textContent = "QUESTION " + String(state.step + 1).padStart(2, "0");
+    el.qText.textContent = q.prompt;
+
+    el.options.innerHTML = q.options.map(function (o) {
+      return '<button class="option" role="radio" aria-checked="' + (selected === o.key) +
+        '" data-key="' + o.key + '"><span class="badge">' + o.key + '</span><span class="txt">' +
+        esc(o.text) + '</span></button>';
+    }).join("");
+
+    Array.prototype.forEach.call(el.options.children, function (btn) {
+      btn.addEventListener("click", function () { selectOption(btn.dataset.key); });
+    });
+
+    el.dots.innerHTML = DATA.items.map(function (_, i) {
+      var cls = "dot" + (state.answers[i] ? " on" : "") + (i === state.step ? " cur" : "");
+      return '<span class="' + cls + '"></span>';
+    }).join("");
+
+    el.prevBtn.disabled = state.step === 0;
+    var isLast = state.step === total - 1;
+    el.nextBtn.textContent = isLast ? "生成报告" : "下一题";
+    el.nextBtn.disabled = !selected;
+    el.qHint.textContent = selected ? "已记录你的选择，可随时回看修改。" : "选择一个更接近你的选项。";
+    el.quizAria.textContent = "第 " + (state.step + 1) + " 题，共 " + total + " 题";
+  }
+
+  function selectOption(key) {
+    state.answers[state.step] = key;
+    persist();
+    renderQuiz();
+    clearTimeout(advanceTimer);
+    var token = ++advanceToken;
+    if (state.step < DATA.items.length - 1) {
+      el.qHint.textContent = "已记录你的选择，正在进入下一题…";
+      advanceTimer = setTimeout(function () {
+        if (token !== advanceToken) return;
+        if (state.step < DATA.items.length - 1) {
+          state.step += 1;
+          renderQuiz();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }, 460);
+    }
+  }
+
+  function gotoStep(step) {
+    clearTimeout(advanceTimer);
+    advanceToken++;
+    state.step = Math.max(0, Math.min(DATA.items.length - 1, step));
+    renderQuiz();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function next() {
+    clearTimeout(advanceTimer);
+    advanceToken++;
+    if (!state.answers[state.step]) { toast("先选择一个选项再继续"); return; }
+    if (state.step === DATA.items.length - 1) { submit(); return; }
+    state.step += 1;
+    renderQuiz();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  function prev() {
+    if (state.step === 0) return;
+    gotoStep(state.step - 1);
+  }
+
+  function submit() {
+    var missing = state.answers.map(function (a, i) { return a ? null : i; }).filter(function (i) { return i !== null; });
+    if (missing.length) {
+      state.step = missing[0];
+      renderQuiz();
+      toast("还有 " + missing.length + " 题未作答，已跳到第 " + (missing[0] + 1) + " 题");
+      return;
+    }
+    var result = MoneyScoring.computeResult(state.answers, DATA.items.length);
+    if (!result.ok) { toast("答案不完整，无法生成报告"); return; }
+    state.result = result;
+    renderResult();
+    window.scrollTo({ top: 0 });
+  }
+
+  /* ---------- 结果 ---------- */
+  function module(title, no, body, extraClass) {
+    return '<section class="module ' + (extraClass || "") + '"><div class="module-title"><span class="no">' +
+      no + '</span><h4>' + title + '</h4></div>' + body + '</section>';
+  }
+
+  function blockHTML(id) {
+    var t = typeOf(id);
+    var html = '<article class="type-block" style="--accent:' + t.color + ';--accent-soft:' + soft(id) + '">';
+    html += '<header class="type-block-head"><span class="k">' + t.key + '</span><h3>' + t.name +
+      '</h3><span class="tag">' + t.tag + '</span></header><div class="type-block-body">';
+
+    html += module("类型概述", "01", "<p>" + esc(t.summary) + "</p>");
+
+    var mech = '<p class="muted">' + esc(t.mechanismIntro) + "</p><ul class=\"m-list\">" +
+      t.mechanism.map(function (m) {
+        return '<li><span class="lab">' + esc(m.label) + "</span><span>" + esc(m.text) + "</span></li>";
+      }).join("") + "</ul><p class=\"muted\" style=\"margin-top:12px\">" + esc(t.origin) + "</p>";
+    html += module("深层心理机制", "02", mech);
+
+    var table = '<table class="spend-table">' + t.spending.map(function (s) {
+      return "<tr><th>" + esc(s.scene) + "</th><td>" + esc(s.behavior) + "</td></tr>";
+    }).join("") + "</table>";
+    html += module("消费行为画像", "03", table);
+
+    html += module("你的金钱优势", "04", '<ul class="num-list">' + t.strengths.map(function (s) {
+      return "<li><span></span></li>".replace("<span></span>", "<span>" + esc(s) + "</span>");
+    }).join("") + "</ul>");
+
+    var blind = '<ul class="num-list">' + t.blindspots.map(function (b) {
+      return "<li><span><b>" + esc(b.title) + "</b>" + esc(b.text) + "</span></li>";
+    }).join("") + "</ul>";
+    html += module("容易忽视的盲区", "05", blind);
+
+    var emo = '<p class="muted">' + esc(t.emotion.intro) + "</p>" + t.emotion.rows.map(function (r) {
+      return '<div class="emotion-row"><span class="lab">' + esc(r.label) + "</span><span>" + esc(r.text) + "</span></div>";
+    }).join("");
+    html += module("金钱与情绪", "06", emo);
+
+    html += module("金钱与人际关系", "07", t.relation.map(function (p) { return "<p>" + esc(p) + "</p>"; }).join(""));
+
+    var grow = '<p class="muted">' + esc(t.growthIntro) + '</p><ul class="num-list">' +
+      t.growth.map(function (g) { return "<li><span>" + esc(g) + "</span></li>"; }).join("") + "</ul>";
+    html += module("成长方向", "08", grow);
+
+    var refl = '<div class="reflect">' + t.reflect.map(function (q, i) {
+      return '<div class="reflect-item"><span class="n">0' + (i + 1) + "</span><span>" + esc(q) + "</span></div>";
+    }).join("") + "</div>";
+    html += module("三个自我觉察问题", "09", refl);
+
+    html += module("专属寄语", "10",
+      '<div class="quote-block"><p class="q">' + esc(t.motto) + '</p><p class="task">你的课题：' + esc(t.task) + "</p></div>");
+
+    html += "</div></article>";
+    return html;
+  }
+
+  function renderResult() {
+    var result = state.result;
+    if (!result) return;
+    state.view = "result";
+    persist();
+
+    el.home.hidden = true;
+    el.quiz.hidden = true;
+    el.result.hidden = false;
+    document.querySelector(".app").classList.add("is-result");
+
+    var main = typeOf(result.dominant[0]);
+    var names = result.dominant.map(function (id) { return typeOf(id).name; });
+    var tags = result.dominant.map(function (id) { return typeOf(id).tag; });
+
+    el.resultHero.style.setProperty("--accent", main.color);
+    el.resultHero.style.setProperty("--accent-soft", soft(result.dominant[0]));
+
+    if (result.dominant.length > 1) {
+      el.resultName.innerHTML = '<div class="tie-list">' + result.dominant.map(function (id) {
+        var t = typeOf(id);
+        return '<div class="tie-row"><span class="k" style="background:' + t.color + '">' + t.key +
+          '</span><span class="name">' + esc(t.name) + '</span><span class="t">' + esc(t.tag) + "</span></div>";
+      }).join("") + "</div>";
+      el.resultTag.innerHTML = '<span class="bullet"></span>并列主导 · ' +
+        (result.dominant.length === 2 ? "两种倾向同等突出" : "三种倾向同等突出");
+    } else {
+      el.resultName.innerHTML = esc(names[0]);
+      el.resultTag.innerHTML = '<span class="bullet"></span>' + esc(tags[0]) + " · 主导类型";
+    }
+
+    var primary = typeOf(result.dominant[0]);
+    el.resultBelief.innerHTML = (result.dominant.length > 1
+      ? '<span class="belief-label">' + esc(primary.name) + '的核心金钱信念</span>'
+      : "") + "「" + esc(primary.belief) + "」";
+    var chipItems = result.dominant.reduce(function (acc, id) {
+      return acc.concat(typeOf(id).keywords.map(function (k) { return { k: k, id: id }; }));
+    }, []).slice(0, 8);
+    el.resultChips.innerHTML = chipItems.map(function (item) {
+      return '<span class="chip" style="background:' + soft(item.id) + '">' + esc(item.k) + "</span>";
+    }).join("");
+
+    var snap = ["a", "b", "c", "d"].map(function (k) {
+      return k.toUpperCase() + " " + result.counts[k];
+    }).join(" · ");
+    el.resultSnapshot.textContent = "本次作答：" + snap + "　（共 10 题）";
+
+    // 分布
+    var labels = { a: "A · 规划者", b: "B · 联结者", c: "C · 追逐者", d: "D · 守护者" };
+    el.distRows.innerHTML = ["a", "b", "c", "d"].map(function (k) {
+      var pct = result.counts[k] * 10;
+      return '<div class="dist-row"><span class="dist-label">' + labels[k] + "</span>" +
+        '<span class="dist-track"><span class="dist-fill" style="background:' + color(k) + '" data-w="' + pct + '"></span></span>' +
+        '<span class="dist-val">' + result.counts[k] + "/10 · " + pct + "%</span></div>";
+    }).join("");
+    requestAnimationFrame(function () {
+      Array.prototype.forEach.call(el.distRows.querySelectorAll(".dist-fill"), function (f) {
+        f.style.width = f.dataset.w + "%";
+      });
+    });
+
+    // 报告主体
+    el.reportBody.innerHTML = result.dominant.map(function (id) { return blockHTML(id); }).join("");
+
+    // 组合解读
+    var combo = null;
+    if (result.dominant.length === 2) {
+      combo = DATA.combos.filter(function (c) { return c.ids.join("+") === result.dominant.join("+"); })[0];
+      if (!combo) combo = DATA.combos.filter(function (c) { return c.ids.slice().sort().join("+") === result.dominant.slice().sort().join("+"); })[0];
+    } else if (result.dominant.length === 3) {
+      combo = DATA.triples.filter(function (c) { return c.ids.slice().sort().join("+") === result.dominant.slice().sort().join("+"); })[0];
+    }
+    if (combo) {
+      el.comboWrap.hidden = false;
+      el.comboTitle.textContent = combo.title;
+      el.comboText.innerHTML = splitParagraphs(combo.text);
+      el.comboLabel.textContent = result.dominant.length === 2 ? "组合解读" : "三元并列解读";
+      el.comboNames.textContent = result.dominant.map(function (id) {
+        return typeOf(id).key + " · " + typeOf(id).name;
+      }).join("　×　");
+    } else {
+      el.comboWrap.hidden = true;
+    }
+
+    el.downloadPdf.disabled = false;
+    el.downloadPoster.disabled = false;
+  }
+
+  /* ---------- 导出 ---------- */
+  function fileName(ext) {
+    var names = state.result.dominant.map(function (id) { return typeOf(id).name; }).join("+");
+    return "金钱观心理测试-" + names + "-" + new Date().toISOString().slice(0, 10) + "." + ext;
+  }
+
+  function guard(fn) {
+    return function () {
+      if (busy) return;
+      busy = true;
+      el.downloadPdf.disabled = true;
+      el.downloadPoster.disabled = true;
+      Promise.resolve()
+        .then(fn)
+        .catch(function (err) {
+          console.error(err);
+          toast("生成失败，请稍后重试");
+        })
+        .then(function () {
+          busy = false;
+          el.downloadPdf.disabled = false;
+          el.downloadPoster.disabled = false;
+          hideMask();
+        });
+    };
+  }
+
+  function downloadPdf() {
+    if (!state.result) return;
+    showMask("正在排版你的报告…");
+    return new Promise(function (resolve) {
+      setTimeout(function () {
+        try {
+          var out = ReportExport.build(state.result, DATA, { date: new Date() });
+          saveBlob(out.blob, fileName("pdf"));
+          toast("报告已生成（共 " + out.pages + " 页），请查看下载");
+        } catch (e) {
+          console.error(e);
+          toast("PDF 生成失败，请重试");
+        }
+        resolve();
+      }, 80);
+    });
+  }
+
+  function downloadPoster() {
+    if (!state.result) return;
+    showMask("正在绘制分享海报…");
+    return ReportExport.poster(state.result, DATA).then(function (blob) {
+      saveBlob(blob, fileName("png"));
+      toast("海报已保存，可直接分享");
+    });
+  }
+
+  /* ---------- 启动 ---------- */
+  function boot() {
+    el.home = $("view-home");
+    el.quiz = $("view-quiz");
+    el.result = $("view-result");
+    el.qCount = $("q-count");
+    el.progressFill = $("progress-fill");
+    el.qNum = $("q-num");
+    el.qText = $("q-text");
+    el.options = $("options");
+    el.dots = $("dots");
+    el.prevBtn = $("prev-btn");
+    el.nextBtn = $("next-btn");
+    el.qHint = $("q-hint");
+    el.quizAria = $("quiz-aria");
+    el.resultHero = $("result-hero");
+    el.resultName = $("result-name");
+    el.resultTag = $("result-tag");
+    el.resultBelief = $("result-belief");
+    el.resultChips = $("result-chips");
+    el.resultSnapshot = $("result-snapshot");
+    el.distRows = $("dist-rows");
+    el.reportBody = $("report-body");
+    el.comboWrap = $("combo");
+    el.comboTitle = $("combo-title");
+    el.comboText = $("combo-text");
+    el.comboLabel = $("combo-label");
+    el.comboNames = $("combo-names");
+    el.downloadPdf = $("download-pdf");
+    el.downloadPoster = $("download-poster");
+    el.toast = $("toast");
+    el.mask = $("mask");
+    el.maskText = $("mask-text");
+
+    $("type-grid").innerHTML = DATA.types.map(function (t) {
+      return '<article class="type-mini"><div class="row"><span class="k" style="background:' + t.color +
+        '">' + t.key + '</span><h3>' + t.name + '</h3></div><p class="tag">' + t.tag +
+        '</p><p class="kw">' + t.keywords.join(" / ") + '</p></article>';
+    }).join("");
+
+    $("start-btn").addEventListener("click", function () {
+      if (answeredCount() === DATA.items.length) {
+        // 已有完整作答：直接续看结果，同时提供重测
+        state.result = MoneyScoring.computeResult(state.answers, DATA.items.length);
+        if (state.result.ok) { renderResult(); return; }
+      }
+      var firstUnanswered = state.answers.map(function (a, i) { return a ? null : i; }).filter(function (i) { return i !== null; })[0];
+      state.step = firstUnanswered === undefined ? 0 : firstUnanswered;
+      renderQuiz();
+      window.scrollTo({ top: 0 });
+    });
+
+    el.prevBtn.addEventListener("click", prev);
+    el.nextBtn.addEventListener("click", next);
+
+    $("resume-btn").addEventListener("click", function () {
+      if (answeredCount() === DATA.items.length) {
+        state.result = MoneyScoring.computeResult(state.answers, DATA.items.length);
+        if (state.result.ok) { renderResult(); return; }
+      }
+      var firstUnanswered = state.answers.map(function (a, i) { return a ? null : i; }).filter(function (i) { return i !== null; })[0];
+      state.step = firstUnanswered === undefined ? 0 : firstUnanswered;
+      renderQuiz();
+      window.scrollTo({ top: 0 });
+    });
+
+    el.downloadPdf.addEventListener("click", guard(downloadPdf));
+    el.downloadPoster.addEventListener("click", guard(downloadPoster));
+
+    $("edit-answers").addEventListener("click", function () { gotoStep(0); });
+    $("restart").addEventListener("click", restart);
+    $("restart-top").addEventListener("click", restart);
+    function restart() {
+      clearTimeout(advanceTimer);
+      advanceToken++;
+      state.answers = new Array(DATA.items.length).fill(null);
+      state.step = 0;
+      state.result = null;
+      clearStore();
+      renderQuiz();
+      window.scrollTo({ top: 0 });
+      toast("已清空本地记录");
+    }
+
+    document.addEventListener("keydown", function (e) {
+      if (state.view !== "quiz") return;
+      var q = DATA.items[state.step];
+      var map = { "1": "A", "2": "B", "3": "C", "4": "D", "a": "A", "b": "B", "c": "C", "d": "D" };
+      var key = e.key.toLowerCase();
+      if (map[key] && document.activeElement.tagName !== "INPUT") {
+        var target = map[key];
+        var btn = Array.prototype.filter.call(el.options.children, function (b) { return b.dataset.key === target; })[0];
+        if (btn) { e.preventDefault(); btn.focus(); selectOption(target); }
+      } else if (e.key === "ArrowLeft") {
+        e.preventDefault(); prev();
+      }
+    });
+
+    // 恢复存档
+    var saved = loadStore();
+    if (saved) {
+      state.answers = saved.answers;
+      state.step = saved.step || 0;
+      if (saved.view === "result" && answeredCount() === DATA.items.length) {
+        state.result = MoneyScoring.computeResult(state.answers, DATA.items.length);
+        if (state.result.ok) { renderResult(); return; }
+      }
+      if (saved.view === "quiz" || answeredCount() > 0) {
+        $("resume-box").hidden = false;
+        $("resume-text").textContent = "上次答到第 " + (state.step + 1) + " 题，已完成 " + answeredCount() + " / " + DATA.items.length + " 题。";
+      }
+    }
+    renderHome();
+  }
+
+  if (typeof document !== "undefined") {
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
+    else boot();
+  }
+})();
+</script>
+</body>
+</html>
